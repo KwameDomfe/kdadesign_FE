@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b64083d1.css",
+    "main.js": "/static/js/main.b6398c1e.js",
+    "static/media/portrait-01.jpg": "/static/media/portrait-01.993ab23c3d244c4bfe34.jpg",
+    "static/media/linkedin.svg": "/static/media/linkedin.33129ba0cdc4cb48fb4e6b583ac1060e.svg",
+    "static/media/close-svgrepo-com_1.svg": "/static/media/close-svgrepo-com_1.3679f386ffd792ab51f2aac881e12083.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.4c38149b469ee5615f4a02295a5f8d80.svg",
+    "static/media/burger-menu-svgrepo-com.svg": "/static/media/burger-menu-svgrepo-com.fc12fbd678bea2ce4ec9524cbe12a170.svg",
+    "main.b64083d1.css.map": "/static/css/main.b64083d1.css.map",
+    "main.b6398c1e.js.map": "/static/js/main.b6398c1e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b64083d1.css",
+    "static/js/main.b6398c1e.js"
+  ]
+}
