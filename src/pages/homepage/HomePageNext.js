@@ -37,7 +37,7 @@ const HomePageNext = () => {
                             >
                             </div>
                             <figcaption id=""
-                                className="pa1-00 gc1s1 gr1s1 lh-copy"
+                                className="ma1-00 gc1s1 gr1s1 lh-copy"
                             >
                                 <h3 className="ttu f1-75"
                                 >

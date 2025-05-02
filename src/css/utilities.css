@@ -142,7 +142,7 @@ a:hover, .active {
 
 .container90-ma{
     width: 90%;
-    min-width: 380px;
+    /* min-width: 380px; */
     max-width: 1024px;  
     overflow: auto;      
 }

@@ -48,12 +48,12 @@ const HomePageRight = (props) => {
                     flex ${flexDirection} justify-center items-center 
                     ggap2-00
                     h-100
-                    pl8-00 pa4-00
+                    pa1-00 pl8-00-l pa4-00-m
                     bg-gradientLR`
                 }
                 >
                     <hgroup id=""
-                        className="gc1s1 gr1s1  mb4-00 w-60 "
+                        className="gc1s1 gr1s1  mb4-00 w-100 w-60-m "
                     >
                         <h2 className="f1-75 f3-00-m mb2-00">
                             {sectionHeading} 
@@ -62,16 +62,16 @@ const HomePageRight = (props) => {
                             {sectionSubHeading}  
                         </p>
                         
-                        <div className="flex justify-between justify-start-s items-center       w-50-m ttu"
+                        <div className="flex justify-around justify-start-s items-center  w-50-m ttu"
                         >
-                            <div className="w10-00 br0-25 pa0-50 mr2-00 bg-white ba tc">
+                            <div className="w6-00 br0-25 pa0-50 mr2-00 bg-white ba tc">
                                 <Link to = {url}
                                     className="gray b"
                                 >
                                     explore...
                                 </Link>     
                             </div>
-                            <div className="w10-00 br0-25 pa0-50 ba tc">
+                            <div className="w6-00 br0-25 pa0-50 ba tc">
                                 <Link to = ""
                                     className="white-90 b">
                                     pricing...
@@ -81,7 +81,7 @@ const HomePageRight = (props) => {
                     </hgroup>
                 
                     <div id="" 
-                        className="dn grid gtc4 ggap0-25 flex-wrap justify-center items-center w-40 ph2-00"
+                        className="dn grid-m gtc4 ggap0-25 flex-wrap justify-center items-center w-40 ph2-00"
                     >
                         <div className="gc1s3 flex flex-column justify-between h10-00 
                             ba br0-25 white-90 pa0-50 bg-black-40"

@@ -68,15 +68,15 @@ const Homepage = () => {
                     className="gc1s12 bb bw3" 
                 >
                     <HomePageRight 
-                    bgColour = 'blue1'
-                    bgImage = {third}
-                    fgImage = {third}
-                    fgColour = 'gradientRL'
-                    flexDirection = 'flex-row-reverse'
-                    sectionHeading = 'Digital Operating Model'
-                    sectionSubHeading = 'Adopt accelerators to evolve your way of working.'
-                    url = 'architect-your-next/digital-operating-model'
-                />
+                        bgColour = 'blue1'
+                        bgImage = {third}
+                        fgImage = {third}
+                        fgColour = 'gradientRL'
+                        flexDirection = 'flex-row-reverse'
+                        sectionHeading = 'Digital Operating Model'
+                        sectionSubHeading = 'Adopt accelerators to evolve your way of working.'
+                        url = 'architect-your-next/digital-operating-model'
+                    />
                 </section>
                 {/* <!-- Digital Operating Models End --> */}
 

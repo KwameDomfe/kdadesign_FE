@@ -6,7 +6,7 @@ const HomepageContactUs = () => {
         <header className="tc container pa2-00">
             <h2 className="f3-00">Contact Us</h2>
         </header>
-        <main className='flex'>
+        <main className='flex flex-column'>
             <div className="w-100 h-100"
             >
                 <form className="black-60 
@@ -51,11 +51,11 @@ const HomepageContactUs = () => {
                 </form>
             </div>
             
-                <div className="w-100 h-100 gray pa1-00">
-                    <div className="mb4-00">
-                        <h2 className="f3-00 f4-00-m">Let us <br/> help you to architect your next...</h2>
-                    </div>
+            <div className="w-100 h-100 gray pa1-00">
+                <div className="mb4-00">
+                    <h2 className="f3-00 f4-00-m">Let us <br/> help you to architect your next...</h2>
                 </div>
+            </div>
             
         </main>
         <footer >

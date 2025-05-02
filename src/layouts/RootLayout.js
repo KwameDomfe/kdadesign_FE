@@ -11,10 +11,10 @@ const RootLayout = () => {
     }, []);
     
     return (
-        <div className="relative"
+        <div className="relative w-100"
         >
             <header id="MainHeader"
-                className="fixed top-0 bg-white z-5"
+                className="fixed top-0 bg-white z-5 w-100"
             >
                 <MainHeader />
             </header>
