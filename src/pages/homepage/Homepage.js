@@ -55,6 +55,7 @@ const Homepage = () => {
                         bgColour = 'blue1'
                         bgImage = {second}
                         fgImage = {second}
+                        flexDirection = 'column'
                         fgColour = 'gradientLR'
                         sectionHeading = 'Digital Core Capabilities'
                         sectionSubHeading = 'Build vital capabilities to deliver digital outcomes.'

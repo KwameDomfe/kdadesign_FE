@@ -19,7 +19,7 @@ const HomePageRight = (props) => {
         <div className={`
                 grid gtc12
                 bg-${bgColour}
-                 
+                vh-100
             `}
         >
             <figure className="
