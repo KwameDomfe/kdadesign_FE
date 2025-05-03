@@ -71,7 +71,7 @@ a:hover, .active {
     border-style: none;
     color: white;
     transform: scale(0.90);
-    border-bottom: 4px solid rgb(253, 188, 9);
+    border-bottom: 2px solid rgb(253, 188, 9);
     
 }
 

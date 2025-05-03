@@ -13,37 +13,43 @@ export const mainNav = [
         id : 1,
         name :'architect your next',
         icon : first,
-        url : 'architect-your-next/'
+        url : '/'
+        // url : 'architect-your-next/'
     },
     {
         id : 3,
         name :'industries',
         icon : first,
-        url : 'industries/'
+        url : '/'
+        // url : 'industries/'
     },
     {
         id : 4,
         name :'services',
         icon : first,
-        url : 'services/'
+        url : '/'
+        // url : '/'
     },
     {
         id : 2,
         name :'platforms',
         icon : first,
-        url : 'platforms/'
+        url : '/'
+        // url : 'platforms/'
     },
     {
         id : 5,
         name :'info',
         icon : first,
-        url : 'info/'
+        url : '/'
+        // url : 'info/'
     },
     {
         id : 6,
         name :'accounts/',
         icon : first,
-        url : ''
+        url : '/'
+        // url : 'acounts/'
     },
 ]
 

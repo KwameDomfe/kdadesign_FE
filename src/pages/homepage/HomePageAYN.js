@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import second from '../../images/placeholders/landscape_Images/featured_grid.jpg'
 const HomePageAYN = () => {
     
     return (
         <div className="grid gtc12 
-            min-vh-90 
+            min-vh-60 h-100
             white-90 bg-gray"
         >
             <figure className="gc1s12 gr1s1 w-100 h-100"
@@ -18,7 +18,7 @@ const HomePageAYN = () => {
             <div id=""
                 className="gc1s12 gr1s1 
                     flex items-center justify-around 
-                    w-100 h-100 pv6-00
+                    w-100 h-100 pv4-00
                     bg-gradient1BT"
             >
                 <div id=""
@@ -36,23 +36,23 @@ const HomePageAYN = () => {
                         </h1>
                         <p className="f1-25 f1-75-m mb4-00"
                         >
-                            We architect <br/> Bespoke Digital Solutions for our clients      
+                            We architect <br/> Bespoke Digital Solutions <br />for our clients      
                         </p>
 
-                        <div className="flex justify-between justify-start-s items-center 
+                        {/*<div className="flex justify-between justify-start-s items-center 
                             w-50-m 
                             ttu"
                         >
-                            <div className="w10-00 br0-25 pa0-50 bg-white ba tc">
+                             <div className="w10-00 br0-25 pa0-50 bg-white ba tc">
                                 <Link to ="architect-your-next"
                                     className="gray b">
                                     read more...
                                 </Link>     
-                            </div>
-                        </div>
+                            </div> 
+                        </div>*/}
                     </div>
                 
-                    <div className="flex flex-column flex-row-s justify-s items-start ggap2-00
+                    {/* <div className="flex flex-column flex-row-s justify-s items-start ggap2-00
                     w-100
                     mb2-00"
                     >
@@ -96,7 +96,7 @@ const HomePageAYN = () => {
                                 <b>view</b>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div> 
         </div>
