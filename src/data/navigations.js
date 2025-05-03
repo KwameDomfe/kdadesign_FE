@@ -11,38 +11,38 @@ import youtube from '../svgs/socialMedia/youtube.svg'
 export const mainNav = [
     {
         id : 1,
-        name :'your next',
+        name :'architect your next',
         icon : first,
         url : 'architect-your-next/'
     },
     {
         id : 3,
         name :'industries',
-        icon : second,
+        icon : first,
         url : 'industries/'
     },
     {
         id : 4,
         name :'services',
-        icon : third,
+        icon : first,
         url : 'services/'
     },
     {
         id : 2,
         name :'platforms',
-        icon : third,
-        url : 'platforms'
+        icon : first,
+        url : 'platforms/'
     },
     {
         id : 5,
         name :'info',
-        icon : second,
+        icon : first,
         url : 'info/'
     },
     {
         id : 6,
-        name :'accounts',
-        icon : second,
+        name :'accounts/',
+        icon : first,
         url : ''
     },
 ]

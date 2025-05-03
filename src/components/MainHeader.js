@@ -68,7 +68,7 @@ const MainHeader = () => {
         >
             <div id="xxx-MainHeader--content"
                 className={`flex justify-between
-                    h-100 pv0-50
+                    pv0-50
                     container container90
                     `}
             >
@@ -86,9 +86,9 @@ const MainHeader = () => {
                     
                 </section>
 
-                {/* <h2>{windowWidth} {windowHeight}</h2> */}
-
-                <div id="xxx-MainHeader--MenuToggle" className=" flex justify-end items-start pv0-50">
+                <div id="xxx-MainHeader--MenuToggle"
+                    className="flex justify-center pv0-50"
+                >
                     <MenuToggle
                         toggleMenu={toggleMenu} 
                         menuClick={handleToggleMenu}
@@ -97,18 +97,18 @@ const MainHeader = () => {
             </div>
             <div>
                 <section id="xxx-MainHeader--NavigationAndUserAccounts"
-                    className="flex flex-column justify-center items-center  
+                    className="flex flex-column justify-start items-center  
                     justify-between-m
                     mt1-00 h-100
                 
                     "
                 >
-                    <div className='w-100 flex items-center justify-center mb2-00'>
+                    <div className='w-100 flex items-center justify-center mb1-00 ph2-00 '>
                         <form className="w-100"
                         >
                             <div>
                                 <input id=""
-                                    className="pa0-50 w-100 tc"
+                                    className="pa0-25 w-100 tc"
                                     type="text" 
                                     name="search"
                                     placeholder="Search KDA Design Technologies Ltd."
@@ -118,7 +118,7 @@ const MainHeader = () => {
                     </div>
                     
                     <nav className="flex items-center justify-start
-                        pa2-00 mb2-00 bg-black-10 br1-00
+                        pa0-50 mb1-00 bg-black-10 br1-00
                         "
                     >
                         <PrimaryNavigation navClick = {handleToggleMenu}/>
@@ -130,11 +130,16 @@ const MainHeader = () => {
                             socialNavClick = {handleToggleMenu}
                         />
                     </nav>
-                    <article className="flex-m pa1-00 mb4-00"
+                    <article className="flex-m mb1-00 mb2-00-s"
                     >
                         <UserAccounts 
                             userAccountsClick = {handleToggleMenu}
                         />
+                    </article>
+                    <article className="ph4-00 mb1-00 f0-75 i tc bg-black-10 pv1-00"
+                    >
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur <a href="/" className="blue1">privacy statement</a>.</p>
+                        <p>Lbeatae tytr provident eligendi molestias sint iure adip. <a href="/" className="blue1">Terms and Conditions</a> apply.</p>
                     </article>
                 </section>
             </div>

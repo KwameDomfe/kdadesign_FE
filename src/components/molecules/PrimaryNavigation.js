@@ -10,8 +10,11 @@ const  PrimaryNavigation = (props) => {
     
     // JSX Elements
     const mainNavElements = mainNav.map( 
+        
         mainNavElement => { 
+            
             return (
+                
                 <li key={ mainNavElement.id } 
                     className="bg-black-50 
                         br0-50 ba bw2 b--white
@@ -19,15 +22,14 @@ const  PrimaryNavigation = (props) => {
                     onClick={ navClick }
                 >
                     <NavLink to = { mainNavElement.url }
-                        className="flex flex-column items-center w6-00 h6-00 justify-between white-80 pa0-50 f1-00 tc"
+                        className="flex flex-column items-center w6-00 h5-00 justify-around white-80 pa0-50 f1-00 tc"
                     >
                         <img src={ mainNavElement.icon }
-                            className="w2-00 h2-00 mb0-50 br0-25 ba b--whit-90 bw1 cover"
+                            className="w1-50 h1-50 br0-25 ba bw1 cover"
                             alt={ mainNavElement.name }
                         />
-                        <span className="w-100 
-                            ttc 
-                            b--white-50"
+                        <span className="
+                            ttc f0-75"
                         >
                             { mainNavElement.name }
                         </span>
