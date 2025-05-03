@@ -1,7 +1,7 @@
 // Menu Icon
 import first from '../images/_partials/logos/kda_design_technologies_logo.jpg'
-import second from '../images/placeholders/regular_images/square-01.png'
-import third from '../images/placeholders/portrait/portrait-01.jpg'
+// import second from '../images/placeholders/regular_images/square-01.png'
+// import third from '../images/placeholders/portrait/portrait-01.jpg'
 // Social Media Icons
 import facebook from '../svgs/socialMedia/facebook.svg'
 import twitter from '../svgs/socialMedia/twitter.svg'
