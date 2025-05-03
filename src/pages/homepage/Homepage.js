@@ -2,14 +2,14 @@ import { useEffect } from 'react'
 import HomePageNav from './HomePageNav'
 import HomePageAYN from './HomePageAYN'
 // import HomePageLeft from './HomePageLeft'
-import HomePageRight from './HomePageRight'
-import HomePageNext from './HomePageNext'
-import HomePageAboutUs from './HomePageAboutUs'
-import HomepageContactUs from './HomepageContactUs'
+// import HomePageRight from './HomePageRight'
+// import HomePageNext from './HomePageNext'
+// import HomePageAboutUs from './HomePageAboutUs'
+// import HomepageContactUs from './HomepageContactUs'
 
-import second from '../../images/placeholders/landscape_Images/featured_grid.jpg'
-import third from '../../images/placeholders//landscape_Images/landscape_01.png'
-import fourth from '../../images/placeholders/landscape_Images/landscape-02.png'
+// import second from '../../images/placeholders/landscape_Images/featured_grid.jpg'
+// import third from '../../images/placeholders//landscape_Images/landscape_01.png'
+// import fourth from '../../images/placeholders/landscape_Images/landscape-02.png'
 
 
 const Homepage = () => {
