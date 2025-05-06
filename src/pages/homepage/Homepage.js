@@ -20,7 +20,7 @@ const Homepage = () => {
 
     return (
         <div id="homePage"
-            className="relative grid gtc12"
+            className="relative h-100 grid gtc12"
         >
            {/* Page Navigation Start */}
             <aside id ="homePage__Header"

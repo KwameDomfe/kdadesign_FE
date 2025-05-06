@@ -52,51 +52,52 @@ const HomePageAYN = () => {
                         </div>*/}
                     </div>
                 
-                    {/* <div className="flex flex-column flex-row-s justify-s items-start ggap2-00
+                    <div className="flex flex-column flex-row-s justify-s items-start ggap2-00
                     w-100
-                    mb2-00"
+                    mb2-00
+                    f1-00"
                     >
                         <div className="flex flex-column justify-between w16-00 h10-00-s
                             ba br0-50 white-90 pa0-50"
                         >
                             <hgroup 
                             >
-                                <h3 className="mb0-50 f1-00 ">
-                                    The new AESL website...
+                                <h3 className="mb0-50 ">
+                                    Please, our website...is currently under development
                                 </h3>
                                 <h5 className="dn db-s fw4 mb0-50">
-                                    AESL has a new website that reflects their new posture
+                                    Check again later for an unforgettable experience.
                                 </h5>
                             </hgroup>
-                            <a href="https://aesl.kdadesign.tech"
+                            {/* <a href="https://aesl.kdadesign.tech"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="mb0-00"
                             >
                                 <b>view</b>
-                            </a>
+                            </a> */}
                         </div>
                         <div className="flex flex-column justify-between w16-00 h10-00-s
                             ba br0-50 white-90 pa0-50"
                         >
                             <hgroup 
                             >
-                                <h3 className="mb0-50 f1-00 ">
-                                    The NEXT Kwame Domfe Appau
+                                <h3 className="mb0-50">
+                                    You can use this link <a className="gold" href="http://www.namecheap.com" target="_blank" rel="noopener noreferrer">www.namecheap.com</a> or <a className="gold" href="http://www.godaddy.com" target="_blank" rel="noopener noreferrer">www.godaddy.com</a> to register your own domain name.
                                 </h3>
-                                <h5 className="dn db-s fw4 mb0-50">
+                                {/* <h5 className="dn db-s fw4 mb0-50">
                                     Kwame Domfe Appau sets out to promote self directed experiential learning.
-                                </h5>
+                                </h5> */}
                             </hgroup>
-                            <a href="https://kwamedomfeappau.com"
+                            {/* <a href="https://kwamedomfeappau.com"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="mb0-00"
                             >
                                 <b>view</b>
-                            </a>
+                            </a> */}
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div> 
         </div>

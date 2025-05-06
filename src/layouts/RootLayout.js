@@ -19,7 +19,7 @@ const RootLayout = () => {
                 <MainHeader />
             </header>
             <main id="MainContent"
-                className="pt4-00"
+                className="pt4-00 vh-90"
             >
                 <Outlet />
             </main>
