@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import avatar from '../../images/placeholders/regular_images/avatar-01.png'
 const UserAccounts = ({userAccountsClick}) => {
   return (
