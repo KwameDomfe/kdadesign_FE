@@ -95,42 +95,42 @@ const MainHeader = () => {
                     />
                 </div>
             </div>
-            <div>
-                <section id="xxx-MainHeader--NavigationAndUserAccounts"
-                    className="flex flex-column justify-start items-center  
-                    justify-between-m
-                    mt1-00 h-100
+            <section id="xxx-MainHeader--NavigationAndUserAccounts"
+                className="flex flex-column justify-between items-center  
+                justify-between-m
+                mt1-00 h-100
+            
+                "
+            >
+                <div className='w-100 flex items-center justify-center mb1-00 ph2-00 '>
+                    <form className="w-100"
+                    >
+                        <div>
+                            <input id=""
+                                className="pa0-25 w-100 tc"
+                                type="text" 
+                                name="search"
+                                placeholder="Search KDA Design Technologies Ltd."
+                            />
+                        </div>
+                    </form>
+                </div>
                 
+                <nav className="flex items-center justify-start
+                    pa0-50 mb1-00 bg-black-10 br1-00
                     "
                 >
-                    <div className='w-100 flex items-center justify-center mb1-00 ph2-00 '>
-                        <form className="w-100"
-                        >
-                            <div>
-                                <input id=""
-                                    className="pa0-25 w-100 tc"
-                                    type="text" 
-                                    name="search"
-                                    placeholder="Search KDA Design Technologies Ltd."
-                                />
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <nav className="flex items-center justify-start
-                        pa0-50 mb1-00 bg-black-10 br1-00
-                        "
-                    >
-                        <PrimaryNavigation navClick = {handleToggleMenu}/>
-                    </nav>
-                   
+                    <PrimaryNavigation navClick = {handleToggleMenu}/>
+                </nav>
+                
+                <div>
                     <nav className="flex-l justify-center mb1-00"
                     >
                         <SocialNavigation 
                             socialNavClick = {handleToggleMenu}
                         />
                     </nav>
-                    <article className="flex-m mb1-00 mb2-00-s"
+                    <article className="flex-m justify-center mb1-00 mv2-00-s"
                     >
                         <UserAccounts 
                             userAccountsClick = {handleToggleMenu}
@@ -141,8 +141,8 @@ const MainHeader = () => {
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur <a href="/" className="blue1">privacy statement</a>.</p>
                         <p>Lbeatae tytr provident eligendi molestias sint iure adip. <a href="/" className="blue1">Terms and Conditions</a> apply.</p>
                     </article>
-                </section>
-            </div>
+                </div>
+            </section>
         </article>
     )
   }
