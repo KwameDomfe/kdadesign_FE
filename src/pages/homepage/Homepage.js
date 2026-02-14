@@ -121,11 +121,11 @@ const Homepage = () => {
             {/* <!-- Page Main End --> */}
 
             {/* <!-- Page Footer Start --> */}
-            {/* <footer id = "homePage__footer"
+            <footer id = "homePage__footer"
                 className="bg-gray gc1s12 tc"
             >
                 Home Page Footer
-            </footer> */}
+            </footer>
             {/* <!-- Page Footer End --> */}
         </div>
     )
