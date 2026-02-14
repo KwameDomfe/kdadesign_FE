@@ -103,9 +103,9 @@ const Homepage = () => {
                       gray"  
                 >   
                     <HomePageNext />
-                </section> */}
+                </section>
                 
-                {/* <section id="homePage_About_Us" 
+                <section id="homePage_About_Us" 
                     className="gc1s12 flex items-center justify-center
                         bg-gray "
                 >
