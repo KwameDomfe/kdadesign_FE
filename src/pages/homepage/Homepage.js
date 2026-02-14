@@ -45,7 +45,7 @@ const Homepage = () => {
                 {/* <!-- Architect Your Next End --> */}
 
                 {/* <!-- Digital Core Capabilities Start --> */}
-                {/* <section id="homePage_digital_core_capablities"
+                <section id="homePage_digital_core_capablities"
                     className="gc1s12
                         pa4-0 ma2-0
                         bb bw3
@@ -61,11 +61,11 @@ const Homepage = () => {
                         sectionSubHeading = 'Build vital capabilities to deliver digital outcomes.'
                         url = 'architect-your-next/digital-core-capabilities'
                     />
-                </section> */}
+                </section>
                 {/* <!-- Digital Core Capabilities End --> */}
 
                 {/* <!-- Digital Operating Models Start --> */}
-                {/* <section id="homePage_operating-model"
+                <section id="homePage_operating-model"
                     className="gc1s12 bb bw3" 
                 >
                     <HomePageRight 
@@ -78,11 +78,11 @@ const Homepage = () => {
                         sectionSubHeading = 'Adopt accelerators to evolve your way of working.'
                         url = 'architect-your-next/digital-operating-model'
                     />
-                </section> */}
+                </section>
                 {/* <!-- Digital Operating Models End --> */}
 
                 {/* <!-- Empower Talent Transformations Start --> */}
-                {/* <section id="homePage_talent_transformation"
+                <section id="homePage_talent_transformation"
                     className="gc1s12 bb bw3" 
                 >
                     <HomePageRight 
@@ -95,10 +95,10 @@ const Homepage = () => {
                         url = 'architect-your-next/empowering-talent-transformation'
                     />
 
-                </section> */}
+                </section>
                 {/* <!-- Empower Talent Transformations End --> */}
                 
-                {/* <section id="homePage_the_next" 
+                <section id="homePage_the_next" 
                     className="gc1s12 min-vh-100 
                       gray"  
                 >   
@@ -110,14 +110,13 @@ const Homepage = () => {
                         bg-gray "
                 >
                     <HomePageAboutUs />
-                </section> */}
+                </section>
                 
-                {/* <section id="homePage_Contact_Us" 
+                <section id="homePage_Contact_Us" 
                     className="gc1s12 container container90 bg-white gray pv4-00 tc"
                 >
                     <HomepageContactUs />
-                </section> 
-                 */}
+                </section>
             </main>
             {/* <!-- Page Main End --> */}
 
