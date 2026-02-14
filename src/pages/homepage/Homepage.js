@@ -5,7 +5,7 @@ import HomePageAYN from './HomePageAYN'
 import HomePageRight from './HomePageRight'
 import HomePageNext from './HomePageNext'
 import HomePageAboutUs from './HomePageAboutUs'
-import HomepageContactUs from './HomepageContactUs'
+// import HomepageContactUs from './HomepageContactUs'
 
 import second from '../../images/placeholders/landscape_Images/featured_grid.jpg'
 import third from '../../images/placeholders//landscape_Images/landscape_01.png'
