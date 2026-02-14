@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import HomePageNav from './HomePageNav'
 import HomePageAYN from './HomePageAYN'
-import HomePageLeft from './HomePageLeft'
+// import HomePageLeft from './HomePageLeft'
 import HomePageRight from './HomePageRight'
 import HomePageNext from './HomePageNext'
 import HomePageAboutUs from './HomePageAboutUs'
