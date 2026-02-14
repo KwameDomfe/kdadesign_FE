@@ -115,7 +115,7 @@ const Homepage = () => {
                 <section id="homePage_Contact_Us" 
                     className="gc1s12 container container90 bg-white gray pv4-00 tc"
                 >
-                    <HomepageContactUs />
+                    {/* <HomepageContactUs /> */}
                 </section>
             </main>
             {/* <!-- Page Main End --> */}
