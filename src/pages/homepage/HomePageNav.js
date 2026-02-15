@@ -6,7 +6,7 @@ const HomePageNav = () => {
         className="pa1-00 f0-75 "
     >
         <ul className="flex-column-m 
-                mb0-00 justify-between items-center
+                mb0-00 justify-between items-start
                 w6-00
                 ttc
                 pv1-50"

@@ -5,7 +5,7 @@ import HomePageAYN from './HomePageAYN'
 import HomePageRight from './HomePageRight'
 import HomePageNext from './HomePageNext'
 import HomePageAboutUs from './HomePageAboutUs'
-// import HomepageContactUs from './HomepageContactUs'
+import HomepageContactUs from './HomepageContactUs'
 
 import second from '../../images/placeholders/landscape_Images/featured_grid.jpg'
 import third from '../../images/placeholders//landscape_Images/landscape_01.png'
@@ -20,13 +20,13 @@ const Homepage = () => {
 
     return (
         <div id="homePage"
-            className="relative h-100 grid gtc12"
+            className="relative grid gtc12 w-100"
         >
            {/* Page Navigation Start */}
             <aside id ="homePage__Header"
-                className="gc1s1 
-                    dn flex-m items-center justify-center 
-                    vh-100 fixed" 
+                className="gc2s10
+                    dn flex-m items-center justify-cente
+                    vh-100 fixed z-5" 
             >
                 <HomePageNav />
             </aside>
@@ -115,14 +115,14 @@ const Homepage = () => {
                 <section id="homePage_Contact_Us" 
                     className="gc1s12 container container90 bg-white gray pv4-00 tc"
                 >
-                    {/* <HomepageContactUs /> */}
+                    <HomepageContactUs />
                 </section>
             </main>
             {/* <!-- Page Main End --> */}
 
             {/* <!-- Page Footer Start --> */}
             <footer id = "homePage__footer"
-                className="bg-gray gc1s12 tc"
+                className="bg-gray gc1s12 pv1-00 tc"
             >
                 Home Page Footer
             </footer>

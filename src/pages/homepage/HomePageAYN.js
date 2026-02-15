@@ -5,7 +5,7 @@ const HomePageAYN = () => {
   return (
     <div
       className="grid gtc12 
-            min-vh-60 h-100
+            min-vh-100 h-100
             white-90 bg-gray"
     >
       <figure className="gc1s12 gr1s1 w-100 h-100">
