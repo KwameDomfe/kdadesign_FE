@@ -13,12 +13,19 @@ const MainFooter = () => {
                 className="flex flex-column items-center justify-center 
                     white-90 h-100"
             >
+                <h2 className="f2-00 f3-00-m mt0-00 mb0-50">
+                    Main Footer
+                </h2>
+
                 <div className="flex mv0-25 items-center justify-center"
                 >
-                    <small className="i"
+                    <a href="https://www.kdadesign.tech" 
+                        className="white-90 i"
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         kda design technologies
-                    </small>
+                    </a>
                     <small className="ml0-50"
                     >
                     &copy;{currentYear}

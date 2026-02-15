@@ -11,29 +11,33 @@ const HomepageContactUs = () => {
             >
                 <form className="black-60 
                     w-100 h-100 
-                    f1-50"
+                    f1-25"
                 >
                     <div className="h-100 w-100 flex flex-column justify-between pa1-00">
                         <header className="h4-00 flex items-center justify-center bg-black-60 white-90">
                             Form header
                         </header>
-                        <div className="flex items-start justify-between flex-column">
-                            <div className="mb1-00 w-100">
-                                <label className="mb1-00 w-100" htmlFor="">name <br/>
-                                    <input id="" 
+                        <div className="flex items-start justify-between flex-column"
+                        >
+                            <div className="mb1-00 w-100"
+                            >
+                                <label className="mb1-00 w-100" 
+                                    htmlFor="name"
+                                >name <br/>
+                                    <input id="name" 
                                         className="pv0-50 w-100" 
                                         type="text" 
-                                        name=""
+                                        name="name"
                                         placeholder="name please.."
                                     />
                                 </label>
                             </div>
                             <div className="mb1-00 w-100">
-                                <label htmlFor="">email <br/>
-                                    <input id="" 
+                                <label htmlFor="email">email <br/>
+                                    <input id="email" 
                                         className="pv0-50 w-100" 
                                         type="email" 
-                                        name=""
+                                        name="email"
                                         placeholder="email please.."
                                     />
                                 </label>

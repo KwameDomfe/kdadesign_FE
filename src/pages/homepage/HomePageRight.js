@@ -45,15 +45,16 @@ const HomePageRight = (props) => {
                 /> 
                 <div id=""
                     className={`gc1s2 gr1s1
-                    flex ${flexDirection} justify-center items-center 
+                    flex ${flexDirection} 
+                    justify-center items-center 
                     ggap2-00
                     h-100
-                    pa1-00 pl8-00-l pa4-00-m
+                    pa1-00  pa4-00-m
                     bg-gradientLR`
                 }
                 >
                     <hgroup id=""
-                        className="gc1s1 gr1s1  mb4-00 w-100 w-60-m "
+                        className="gc1s1 gr1s1  mb4-00 w-60-m "
                     >
                         <h2 className="f1-75 f3-00-m mb2-00">
                             {sectionHeading} 
@@ -62,9 +63,10 @@ const HomePageRight = (props) => {
                             {sectionSubHeading}  
                         </p>
                         
-                        <div className="flex justify-around justify-start-s items-center  w-50-m ttu"
+                        <div className="flex justify-start items-center ttu"
                         >
-                            <div className="w6-00 br0-25 pa0-50 mr2-00 bg-white ba tc">
+                            <div className="w6-00 br0-25 pa0-50 mr1-00 bg-white ba tc"
+                            >
                                 <Link to = {url}
                                     className="gray b"
                                 >
@@ -81,9 +83,9 @@ const HomePageRight = (props) => {
                     </hgroup>
                 
                     <div id="" 
-                        className="dn grid-m gtc4 ggap0-25 flex-wrap justify-center items-center w-40 ph2-00"
+                        className="grid gtc4 ggap2-00 justify-center items-center"
                     >
-                        <div className="gc1s3 flex flex-column justify-between h10-00 
+                        <div className="gc1s2 flex flex-column justify-between h10-00 
                             ba br0-25 white-90 pa0-50 bg-black-40"
                         >
                             <hgroup 
@@ -92,7 +94,7 @@ const HomePageRight = (props) => {
                                     doloribus nesciunt
                                 </h3>
                                 <h5 className="fw4 mb0-50">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid numquam a eligendi quod reiciendis suscipit vero voluptatum neque amet veniam.
+                                    Lorem ipsum dolor sit amet consect, adipisicing elit. quid neque amet veniam.
                                 </h5>
                             </hgroup>
                             <Link to=""
@@ -101,43 +103,27 @@ const HomePageRight = (props) => {
                                 <b>view</b>
                             </Link>
                         </div>
-                        <div className="gc4s1 flex flex-column justify-between  h10-00 
-                            br0-25 white-90 pa0-50 bg-white-10"
+                    
+                        <div className="gc1s2 flex flex-column justify-between h10-00 
+                            ba br0-25 white-90 pa0-50 bg-white-10"
                         >
-                            {/* <hgroup 
+                            <hgroup 
                             >
                                 <h3 className="mb0-50 f1-00 ">
                                     doloribus nesciunt
                                 </h3>
                                 <h5 className="fw4 mb0-50">
-                                    
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. veniam.
                                 </h5>
                             </hgroup>
                             <Link to=""
                                 className="mb0-00 white-90"
                             >
                                 <b>view</b>
-                            </Link> */}
+                            </Link>
                         </div>
-                        <div className="gc1s1 flex flex-column justify-between h10-00 
-                            br0-25 white-90 pa0-50 bg-white-10"
-                        >
-                            {/* <hgroup 
-                            >
-                                <h3 className="mb0-50 f1-00 ">
-                                    doloribus nesciunt
-                                </h3>
-                                <h5 className="fw4 mb0-50">
-                                    
-                                </h5>
-                            </hgroup>
-                            <Link to=""
-                                className="mb0-00 white-90"
-                            >
-                                <b>view</b>
-                            </Link> */}
-                        </div>
-                        <div className="gc2s3 flex flex-column justify-between h10-00
+                        
+                        <div className="gc1s2 flex flex-column justify-between h10-00
                             ba br0-25 white-90 pa0-50 bg-black-40"
                         >
                             <hgroup 
@@ -146,7 +132,7 @@ const HomePageRight = (props) => {
                                     doloribus nesciunt
                                 </h3>
                                 <h5 className="fw4 mb0-50">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid numquam a eligendi quod reiciendis suscipit vero voluptatum neque amet veniam.
+                                Aliquid numquam a eligendi quod reiciendis suscipit vero voluptatum neque amet veniam.
                                 </h5>
                             </hgroup>
                             <Link to=""
@@ -155,42 +141,7 @@ const HomePageRight = (props) => {
                                 <b>view</b>
                             </Link>
                         </div>
-                        <div className="gc1s3 flex flex-column justify-between h10-00 
-                            ba br0-25 white-90 pa0-50 bg-black-40"
-                        >
-                            <hgroup 
-                            >
-                                <h3 className="mb0-50 f1-00 ">
-                                    doloribus nesciunt
-                                </h3>
-                                <h5 className="fw4 mb0-50">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid numquam a eligendi quod reiciendis suscipit vero voluptatum neque amet veniam.
-                                </h5>
-                            </hgroup>
-                            <Link to=""
-                                className="mb0-00 white-90"
-                            >
-                                <b>view</b>
-                            </Link>
-                        </div>
-                        <div className="gc4s1 flex flex-column justify-between h10-00
-                             br0-25 white-90 pa0-50 bg-white-10"
-                        >
-                            {/* <hgroup 
-                            >
-                                <h3 className="mb0-50 f1-00 ">
-                                    doloribus nesciunt
-                                </h3>
-                                <h5 className="fw4 mb0-50">
-                                    
-                                </h5>
-                            </hgroup>
-                            <Link to=""
-                                className="mb0-00 white-90"
-                            >
-                                <b>view</b>
-                            </Link> */}
-                        </div>
+                        
                     </div>
                 </div>
                 

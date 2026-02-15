@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import second from '../../images/projects/_partials/accra-ghana-colorful-vector-artmap.jpg'
 const HomePageNext = () => {
   return (
     <div>
@@ -17,8 +17,12 @@ const HomePageNext = () => {
             className=""
         >
             <section id="homePage_the_next--header"
-                className="grid gtc12 ggap0-25 gg0-00-m mb4-00 white-90 container container90 container80-m">
-                <div className="gc1s12 gr1s1  gc1s6-m gr1s2-m "
+                className="grid gtc12 ggap0-25 gg0-00-m 
+                    mb4-00 
+                    white-90 
+                    container container90 container80-m"
+            >
+                <div className="gc1s12 gc1s6-l gr1s1 gr1s2-l "
                 >
                     <Link to=""
                         className="white-90"
@@ -58,7 +62,7 @@ const HomePageNext = () => {
                     </Link>
                 </div>
 
-                <div className="gc1s12 gr2s1 gc1s6-s gc7s3-m gr1s1-m"
+                <div className="gc1s12 gr2s1 gc1s6-s gc7s3-l gr1s1-l"
                 >
                     <Link to=""
                         className="white-90"
@@ -82,14 +86,14 @@ const HomePageNext = () => {
                                     Lorem ipsum dolor sit amet.
                                 </h3>
                                 <p className="fw2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur facere dolorum aut sapiente. Magni a, doloremque l.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur mnuagni a, doloremque labore nam.
                                 </p>
                             </figcaption>
                         </figure>
                     </Link>
                 </div>
 
-                <div className="gc1s12 gr3s1 gc7s6-s gc7s3-m gr2s1-m"
+                <div className="gc1s12 gr3s1 gc7s6-s gc7s3-l gr2s1-l"
                 >
                     <Link to=""
                         className="white-90"
@@ -114,7 +118,7 @@ const HomePageNext = () => {
                                     Lorem ipsum dolor sit amet.
                                 </h3>
                                 <p className="fw2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. debitis eos dolorum aut sapiente. Magni a, doloremque labore nam odio aliquam.
+                                    Lorem ipsum dolorg elit. debitis eos dolorum aut sapiente. Magni a, doloremqu labore nam odio aliquam.
                                 </p>
                             </figcaption>
                         </figure>
@@ -122,7 +126,7 @@ const HomePageNext = () => {
                 </div>
 
                 <div 
-                    className="gc1s12 gr4s1 gc7s6-s gr2s1-s gc10s3-m gr1s1-m"
+                    className="gc1s12 gr4s1 gc7s6-s gr2s1-s gc10s3-l gr1s1-l"
                 >
                     <Link to=""
                         className="white-90"
@@ -144,14 +148,14 @@ const HomePageNext = () => {
                                     Lorem ipsum dolor sit amet.
                                 </h3>
                                 <p className="fw2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur laborum vel, deserunt debitis eos dolorum aut sapiente. Magni a, doloremque.
+                                    Lorem ipsum dolor. Molestias laborum vel, deserunt debitis eos dolorum aut sapiente. Magni a, doloremque.
                                 </p>
                             </figcaption>
                         </figure>
                     </Link>
                 </div>
 
-                <div className="gc1s12 gr5s1 gr3s1-s gc1s6-s gc10s3-m gr2s1-m w-100"
+                <div className="gc1s12 gr5s1 gr3s1-s gc1s6-s gc10s3-l gr2s1-l w-100"
                 >
                     <Link to=""
                         className="white-90"
@@ -174,7 +178,7 @@ const HomePageNext = () => {
                                     Lorem ipsum dolor sit amet.
                                 </h3>
                                 <p className="fw2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos perspiciatis vitae, obcaecati numquam porro!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos perspiciatis vitae, obcaecati numquam!
                                 </p>
                             </figcaption>
                         </figure>
@@ -183,7 +187,7 @@ const HomePageNext = () => {
             </section>
 
             <section id="" 
-                className="grid gtc12 mv2-00"
+                className="grid gtc12 mv2-00 bg-gradientR"
             >
                 <div className="gc1s12 gr1s1 gc1s6-s gc1s3-m gr1s1-m"
                 >
@@ -280,11 +284,11 @@ const HomePageNext = () => {
             </section>
 
             <section id=""
-                className="grid gtc12 mb4-00 white-90 w-100 vh-50 "
+                className="grid gtc12 mb4-00 white-90 "
             >
-                <img src="" 
+                <img src={second} 
                     alt=""
-                    className="gc1s12 gr1s1 h-100 cover w-100"
+                    className="gc1s12 gr1s1 cover"
                 />
                 <div className="gc1s12 gr1s1 bg-black-40 pa2-00 h-100"
                 >
@@ -317,15 +321,17 @@ const HomePageNext = () => {
                 >
                     <figcaption className="pa1-00 pa4-00-m gc1s1 gr1s1 
                         container container90 
-                        ba bw3 br1-00 
                         tc fw6 black 
-                        bg-gold"
+                        bg-black-20"
                     >
                         <h1 className="f3-00 f4-00-m  fw6 ttc mt0-00 mb2-00">
                             Our Purpose
                         </h1>
                         <p className="f1-75 mb0-00">
                             Democratization of digital design
+                        </p>
+                        <p className="f1-75 mb0-00">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur facere  Magni a, doloremque labore nam porro ipsam alias odio aliquam.
                         </p>
                     </figcaption>
                 </div>

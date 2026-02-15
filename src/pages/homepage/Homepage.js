@@ -20,7 +20,7 @@ const Homepage = () => {
 
     return (
         <div id="homePage"
-            className="relative grid gtc12 w-100"
+            className="relative grid gtc12 w-100 h-100"
         >
            {/* Page Navigation Start */}
             <aside id ="homePage__Header"
@@ -55,7 +55,7 @@ const Homepage = () => {
                         bgColour = 'blue1'
                         bgImage = {second}
                         fgImage = {second}
-                        flexDirection = 'column'
+                        flexDirection = 'flex-column'
                         fgColour = 'gradientLR'
                         sectionHeading = 'Digital Core Capabilities'
                         sectionSubHeading = 'Build vital capabilities to deliver digital outcomes.'
@@ -73,7 +73,7 @@ const Homepage = () => {
                         bgImage = {third}
                         fgImage = {third}
                         fgColour = 'gradientRL'
-                        flexDirection = 'flex-row-reverse'
+                        // flexDirection = 'flex-row-reverse'
                         sectionHeading = 'Digital Operating Model'
                         sectionSubHeading = 'Adopt accelerators to evolve your way of working.'
                         url = 'architect-your-next/digital-operating-model'

@@ -11,15 +11,15 @@ const RootLayout = () => {
     }, []);
     
     return (
-        <div className="relative w-100"
-        >
+        <div className="relative w-100">
+        
             <header id="MainHeader"
                 className="fixed top-0 bg-white z-5 w-100"
             >
                 <MainHeader />
             </header>
             <main id="MainContent"
-                className="min-vh-100 pt4-00"
+                className="pt4-00 h-100 w-100"
             >
                 <Outlet />
             </main>
