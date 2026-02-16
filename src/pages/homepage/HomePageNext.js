@@ -190,7 +190,7 @@ const HomePageNext = () => {
             </section>
 
             <section id="" 
-                className="grid gtc12 mv2-00 bg-gradientR"
+                className="grid gtc12 mv2-00 bg-gradient1BT"
             >
                 <div className="gc1s12 gr1s1 gc1s6-s gc1s3-m gr1s1-m"
                 >
@@ -207,7 +207,7 @@ const HomePageNext = () => {
                         </figcaption>
                         
                         <div className="flex items-center justify-center 
-                            w2-00 h2-00
+                            w2-00 h2-00 white-90
                             pb0-50 
                             f2-00 
                             ba br-50 "
@@ -230,7 +230,7 @@ const HomePageNext = () => {
                             </h3>
                         </figcaption>
                         <div className="flex items-center justify-center 
-                            w2-00 h2-00
+                            w2-00 h2-00 white-90
                             pb0-50 
                             f2-00 
                             ba br-50 "
@@ -252,7 +252,7 @@ const HomePageNext = () => {
                             </h3>
                         </figcaption>
                         <div className="flex items-center justify-center 
-                            w2-00 h2-00
+                            w2-00 h2-00 white-90
                             pb0-50 
                             f2-00 
                             ba br-50 "
@@ -269,12 +269,12 @@ const HomePageNext = () => {
                         <figcaption className=" 
                             gray"
                         >
-                            <h3 className="fw6 tc">
+                            <h3 className="fw6 tc mb1-00">
                                 Architect your next
                             </h3>
                         </figcaption>
                         <div className="flex items-center justify-center 
-                            w2-00 h2-00
+                            w2-00 h2-00 white-90
                             pb0-50 
                             f2-00 
                             ba br-50 "
