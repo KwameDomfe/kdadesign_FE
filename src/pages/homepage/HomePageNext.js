@@ -12,6 +12,8 @@ const HomePageNext = () => {
         >
             <h2 className="f3-00">The Next</h2>
             <p className="tc f1-50">We bring you powerful advantages to architect your next digital transformation</p>
+             <p className="tc f1-50">We bring you powerful advantages to architect your next digital transformation</p>
+              <p className="tc f1-50">We bring you powerful advantages to architect your next digital transformation</p>
         </header>
         <main id="homePage_the_next--content"
             className=""
@@ -40,10 +42,10 @@ const HomePageNext = () => {
                                 className="gc1s1 gr1s1 pb-100 w-100 bg-black-60"
                             >
                             </div>
-                            <figcaption id=""
-                                className="ma1-00 gc1s1 gr1s1 lh-copy"
+                            <figcaption
+                                className="ma0-50 gc1s1 gr1s1 lh-copy"
                             >
-                                <h3 className="ttu f1-75"
+                                <h3 className="ttu f1-50"
                                 >
                                 <b> Experience</b>
                                 </h3>
@@ -77,9 +79,9 @@ const HomePageNext = () => {
                             <div id=""
                                 className="gc1s1 gr1s1 pb-100 bg-black-60">
                             </div>
-                            <figcaption className="pa1-00 gc1s1 gr1s1"
+                            <figcaption className="ma0-50 gc1s1 gr1s1"
                             >
-                                <h3 className="ttu f1-75">
+                                <h3 className="ttu f1-50">
                                     <b> Insight</b>
                                 </h3>
                                 <h3 className="fw4 f1-50 ">
@@ -88,6 +90,7 @@ const HomePageNext = () => {
                                 <p className="fw2">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur mnuagni a, doloremque labore nam.
                                 </p>
+                                 
                             </figcaption>
                         </figure>
                     </Link>
@@ -109,9 +112,9 @@ const HomePageNext = () => {
                                 className="gc1s1 gr1s1 pb-100 bg-black-60">
                             </div>
                             <figcaption 
-                                className="pa1-00 gc1s1 gr1s1"
+                                className="ma0-50 gc1s1 gr1s1"
                             >
-                                <h3 className="ttu f1-75 ">
+                                <h3 className="ttu f1-50 ">
                                     <b>Innovate</b>
                                 </h3>
                                 <h3 className="fw4 f1-50 ">
@@ -140,8 +143,8 @@ const HomePageNext = () => {
                             <div id=""
                                 className="gc1s1 gr1s1 pb-100 bg-black-60">
                             </div>
-                            <figcaption className="pa1-00 gc1s1 gr1s1">
-                                <h3 className="ttu f1-75 ">
+                            <figcaption className="ma0-50 gc1s1 gr1s1">
+                                <h3 className="ttu f1-50 ">
                                     <b>Accelerate</b>
                                 </h3>
                                 <h3 className="fw4 f1-50 ">
@@ -170,8 +173,8 @@ const HomePageNext = () => {
                             <div id=""
                                 className="gc1s1 gr1s1 bg-black-60 pb-100">
                             </div>
-                            <figcaption className="ma1-00 flex flex-column gc1s1 gr1s1 h-100">
-                                <h3 className="ttu f1-75 ">
+                            <figcaption className="ma0-50 flex flex-column gc1s1 gr1s1 h-100">
+                                <h3 className="ttu f1-50 ">
                                     <b> Assure</b>
                                 </h3>
                                 <h3 className="fw4 f1-50 ">

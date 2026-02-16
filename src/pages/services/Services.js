@@ -23,7 +23,21 @@ const Services = () => {
                       className=""
                   >
                       <Link to="web-apps">
+                          <h2>WebSites</h2>
+                      </Link>
+                  </section>
+                  <section id="ayn__anp"
+                      className=""
+                  >
+                      <Link to="web-apps">
                           <h2>WebApps</h2>
+                      </Link>
+                  </section>
+                  <section id="ayn__anp"
+                      className=""
+                  >
+                      <Link to="web-apps">
+                          <h2>MobileApps</h2>
                       </Link>
                   </section>
                   <section id="ayn__dcc"

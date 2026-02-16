@@ -10,6 +10,8 @@ const HomePageRight = (props) => {
         sectionSubHeading, 
         bgColour, 
         fgColour,
+        lgcs,
+        rgcs,
         flexDirection, 
         url 
 
@@ -33,7 +35,7 @@ const HomePageRight = (props) => {
             <div id=""
                 className={`
                     gc1s12 gr1s1 
-                    grid gtc2 items-center justify-around
+                    grid gtc4 items-center justify-around
                                        
                     bg-${fgColour} 
                      
@@ -41,108 +43,120 @@ const HomePageRight = (props) => {
             >   
                 <img src={fgImage} 
                     alt=""
-                    className="gc1s2 gr1s1 h-100 cover"
+                    className="gc2s3 gr1s1 h-100 cover"
                 /> 
                 <div id=""
-                    className={`gc1s2 gr1s1
-                    flex ${flexDirection} 
-                    justify-center items-center 
-                    ggap2-00
-                    h-100
-                    pa1-00  pa4-00-m
-                    bg-gradientLR`
+                    className={`gc1s4 gr1s1
+                        
+                        h-100
+                        
+                        bg-gradientLR
+
+                    
+                    `
                 }
                 >
-                    <hgroup id=""
-                        className="gc1s1 gr1s1  mb4-00 w-60-m "
-                    >
-                        <h2 className="f1-75 f3-00-m mb2-00">
-                            {sectionHeading} 
-                        </h2>
-                        <p className="f1-25 f1-75-m mb4-00">
-                            {sectionSubHeading}  
-                        </p>
-                        
-                        <div className="flex justify-start items-center ttu"
+                    <div className="grid gtc12
+                        justify-center items-center
+                        ggap1-00 h-100 container container80">
+                        <hgroup id=""
+                            className={`${lgcs} gr1s1 flex flex-column`}
                         >
-                            <div className="w6-00 br0-25 pa0-50 mr1-00 bg-white ba tc"
+                            <h2 className="f1-75 f3-00-m mb2-00">
+                                {sectionHeading} 
+                            </h2>
+                            <p className="f1-25 f2-50-m mb4-00">
+                                {sectionSubHeading}  
+                            </p>
+                            
+                            <div className="flex justify-start items-center ttu"
                             >
-                                <Link to = {url}
-                                    className="gray b"
+                                <div className="w6-00 br0-25 pa0-50 mr1-00 bg-white ba tc"
                                 >
-                                    explore...
-                                </Link>     
+                                    <Link to = {url}
+                                        className="gray b"
+                                    >
+                                        explore...
+                                    </Link>     
+                                </div>
+                                <div className="w6-00 br0-25 pa0-50 ba tc">
+                                    <Link to = ""
+                                        className="white-90 b">
+                                        pricing...
+                                    </Link>
+                                </div>
                             </div>
-                            <div className="w6-00 br0-25 pa0-50 ba tc">
-                                <Link to = ""
-                                    className="white-90 b">
-                                    pricing...
-                                </Link>
-                            </div>
-                        </div>
-                    </hgroup>
-                
-                    <div id="" 
-                        className="grid gtc4 ggap2-00 justify-center items-center"
-                    >
-                        <div className="gc1s2 flex flex-column justify-between h10-00 
-                            ba br0-25 white-90 pa0-50 bg-black-40"
-                        >
-                            <hgroup 
-                            >
-                                <h3 className="mb0-50 f1-00 ">
-                                    doloribus nesciunt
-                                </h3>
-                                <h5 className="fw4 mb0-50">
-                                    Lorem ipsum dolor sit amet consect, adipisicing elit. quid neque amet veniam.
-                                </h5>
-                            </hgroup>
-                            <Link to=""
-                                className="mb0-00 white-90"
-                            >
-                                <b>view</b>
-                            </Link>
-                        </div>
+                        </hgroup>
                     
-                        <div className="gc1s2 flex flex-column justify-between h10-00 
-                            ba br0-25 white-90 pa0-50 bg-white-10"
+                        <div id="" 
+                            className={`${rgcs} flex flex-column justify-center items-center ggap1-00`}
                         >
-                            <hgroup 
+                            <div className="gc1s2 flex flex-column justify-between h10-00 
+                                ba br0-25 white-90 pa1-00 bg-black-40"
                             >
-                                <h3 className="mb0-50 f1-00 ">
-                                    doloribus nesciunt
-                                </h3>
-                                <h5 className="fw4 mb0-50">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. veniam.
-                                </h5>
-                            </hgroup>
-                            <Link to=""
-                                className="mb0-00 white-90"
-                            >
-                                <b>view</b>
-                            </Link>
-                        </div>
+                                <hgroup 
+                                >
+                                    <h3 className="mb0-50 f1-00 ">
+                                        doloribus nesciunt amet consect
+                                    </h3>
+                                    <h5 className="fw4 mb0-50">
+                                        Lorem ipsum dolor sit amet consect, adipisicing elit. quid neque amet veniam.
+                                    </h5>
+                                </hgroup>
+                                <div>
+                                    <Link to=""
+                                        className="mb0-00 ba ph1-00 pv0-25 white-90"
+                                    >
+                                        <b>read more...</b>
+                                    </Link>
+                                </div>
+                            </div>
                         
-                        <div className="gc1s2 flex flex-column justify-between h10-00
-                            ba br0-25 white-90 pa0-50 bg-black-40"
-                        >
-                            <hgroup 
+                            <div className="gc1s2 flex flex-column justify-between h10-00 
+                                ba br0-25 white-90 pa1-00 bg-white-10"
                             >
-                                <h3 className="mb0-50 f1-00 ">
-                                    doloribus nesciunt
-                                </h3>
-                                <h5 className="fw4 mb0-50">
-                                Aliquid numquam a eligendi quod reiciendis suscipit vero voluptatum neque amet veniam.
-                                </h5>
-                            </hgroup>
-                            <Link to=""
-                                className="mb0-00 white-90"
+                                <hgroup 
+                                >
+                                    <h3 className="mb0-50 f1-00 ">
+                                        doloribus nesciunt amet consect
+                                    </h3>
+                                    <h5 className="fw4 mb0-50">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. veniam.
+                                    </h5>
+                                </hgroup>
+                                <div>
+                                    <Link to=""
+                                        className="mb0-00 ba ph1-00 pv0-25 white-90"
+                                    >
+                                        <b>read more...</b>
+                                    </Link>
+                                </div>
+                            </div>
+                            
+                            <div className="gc1s2 flex flex-column justify-between h10-00
+                                ba br0-25 white-90 pa1-00 bg-black-40"
                             >
-                                <b>view</b>
-                            </Link>
+                                <hgroup 
+                                >
+                                    <h3 className="mb0-50 f1-00 ">
+                                        doloribus nesciunt amet consect
+                                    </h3>
+                                    <h5 className="fw4 mb0-50">
+                                    Aliquid numquam eligendi quod reiciendis suscipit vero voluptatum neque amet veniam.
+                                    </h5>
+                                </hgroup>
+                                <div>
+                                    <Link to=""
+                                        className="mb0-00 ba ph1-00 pv0-25 white-90"
+                                    >
+                                        <b>read more...</b>
+                                    </Link>
+                                </div>
+                            </div>
+                            
                         </div>
-                        
                     </div>
+                    
                 </div>
                 
             </div>
