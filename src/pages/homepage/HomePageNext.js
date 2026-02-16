@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import second from '../../images/projects/_partials/accra-ghana-colorful-vector-artmap.jpg'
+import third from '../../images/_partials/backgrounds/4-2b.jpg'
 const HomePageNext = () => {
   return (
     <div>
@@ -44,7 +45,7 @@ const HomePageNext = () => {
                                 h0-00 pb-100 w-100 items-start
                                 pa0-00"
                         >
-                            <img src="" 
+                            <img src={second}
                                 alt=""
                                 className="gc1s1 gr1s1 h-100 cover"
                             />
@@ -82,7 +83,7 @@ const HomePageNext = () => {
                         <figure id="insight" 
                             className="grid h0-00 pb-100 w-100 pa0-00"
                         >
-                            <img src="" 
+                            <img src={third}
                                 alt=""
                                 className="gc1s1 gr1s1 h-100 cover"
                             />
@@ -114,7 +115,7 @@ const HomePageNext = () => {
                         <figure id="innovate"
                             className="grid h0-00 pb-100 w-100 pa0-00"
                         >
-                            <img src="" 
+                            <img src={third}
                                 alt=""
                                 className="gc1s1 gr1s1 h-100 cover"
                             />
@@ -146,7 +147,7 @@ const HomePageNext = () => {
                     >
                         <figure id="accelerate" 
                             className="grid h0-00 pb-100 w-100 pa0-00">
-                            <img src="" 
+                            <img src={third} 
                                 alt=""
                                 className="gc1s1 gr1s1 h-100 cover"
                             />
@@ -176,7 +177,7 @@ const HomePageNext = () => {
                         <figure id="assure" 
                             className="grid h0-00 pb-100 w-100 pa0-00"
                         >
-                            <img src="" 
+                            <img src={third} 
                                 alt=""
                                 className="gc1s1 gr1s1 h-100 cover"
                             />

@@ -69,7 +69,7 @@ const MainHeader = () => {
             <div id="xxx-MainHeader--content"
                 className={`flex justify-between
                     pv0-50
-                    container container90
+                    container container80
                     `}
             >
                 <section id="xxx-MainHeader--Logo"
