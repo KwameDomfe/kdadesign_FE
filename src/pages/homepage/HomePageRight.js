@@ -11,8 +11,7 @@ const HomePageRight = (props) => {
         bgColour, 
         fgColour,
         lgcs,
-        rgcs,
-        flexDirection, 
+        rgcs, 
         url 
 
     } = props
