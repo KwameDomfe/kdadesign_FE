@@ -10,6 +10,7 @@ import ArchitectYourNext from './next/ArchitectYourNext'
 import ArchitectYourNextHeader from './next/ArchitectYourNextHeader'
 const HomePageNext = () => {
     const [activeOffer, setActiveOffer] = useState(null)
+    const [isModalVisible, setIsModalVisible] = useState(false)
     const offerComponents = {
         platforms: PlatformsModalContent,
         services: ServicesModalContent,
@@ -20,9 +21,19 @@ const HomePageNext = () => {
 
     const openOfferDialog = (offerKey) => {
         setActiveOffer(offerKey)
+        requestAnimationFrame(() => {
+            setIsModalVisible(true)
+        })
     }
+
     const closeOfferDialog = () => {
-        setActiveOffer(null)
+        setIsModalVisible(false)
+    }
+
+    const handleModalTransitionEnd = (event) => {
+        if (!isModalVisible && event.target === event.currentTarget && event.propertyName === 'opacity') {
+            setActiveOffer(null)
+        }
     }
 
   return (
@@ -45,16 +56,25 @@ const HomePageNext = () => {
                     position: 'fixed',
                     inset: 0,
                     backgroundColor: 'rgba(0, 0, 0, 0.6)',
-                    zIndex: 999
+                    zIndex: 999,
+                    opacity: isModalVisible ? 1 : 0,
+                    transition: 'opacity 220ms ease-out'
                 }}
                 onClick={closeOfferDialog}
+                onTransitionEnd={handleModalTransitionEnd}
             >
                 <div
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby="homePage_offer_dialog_title"
                     className="bg-white w-100 gray pa2-00 br0-25"
-                    style={{ maxWidth: '768px', width: '100%' }}
+                    style={{
+                        maxWidth: '768px',
+                        width: '100%',
+                        opacity: isModalVisible ? 1 : 0,
+                        transform: isModalVisible ? 'translateY(0) scale(1)' : 'translateY(8px) scale(0.98)',
+                        transition: 'opacity 220ms ease-out, transform 220ms ease-out'
+                    }}
                     onClick={(event) => event.stopPropagation()}
                 >
                     {ActiveOfferComponent && <ActiveOfferComponent />}

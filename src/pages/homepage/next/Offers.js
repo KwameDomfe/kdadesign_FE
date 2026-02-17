@@ -1,4 +1,5 @@
 import React from 'react'
+import './Offers.css'
 
 const Offers = ({ openOfferDialog }) => {
     
@@ -31,13 +32,13 @@ const Offers = ({ openOfferDialog }) => {
                             aria-label="Open Our Platforms details"
                             onClick={() => openOfferDialog('platforms')}
                             className="w-100 h-100 
-                                mb1-00
                                 f2-00 
                                 bg-transparent  
                                 bn 
-                                pointer"
+                                pointer
+                                offers-plus-button"
                         >
-                            +
+                            <span className="offers-plus-symbol" aria-hidden="true"></span>
                         </button>
                     </div>
                 </figure>
@@ -57,7 +58,6 @@ const Offers = ({ openOfferDialog }) => {
                     </figcaption>
                     <div className="flex items-center justify-center 
                         w2-00 h2-00 black-90
-                        pb0-50 
                         f2-00 
                         ba br-50 "
                     >
@@ -65,9 +65,9 @@ const Offers = ({ openOfferDialog }) => {
                             type="button"
                             aria-label="Open Service Offerings details"
                             onClick={() => openOfferDialog('services')}
-                            className="w-100 h-100 mb1-00 f2-00 bg-transparent bn pointer"
+                            className="w-100 h-100 f2-00 bg-transparent bn pointer offers-plus-button"
                         >
-                            +
+                            <span className="offers-plus-symbol" aria-hidden="true"></span>
                         </button>
                     </div>
                 </figure>
@@ -86,7 +86,6 @@ const Offers = ({ openOfferDialog }) => {
                     </figcaption>
                     <div className="flex items-center justify-center 
                         w2-00 h2-00 black-90
-                        pb0-50 
                         f2-00 
                         ba br-50 "
                     >
@@ -94,9 +93,9 @@ const Offers = ({ openOfferDialog }) => {
                             type="button"
                             aria-label="Open Explore Industries details"
                             onClick={() => openOfferDialog('industries')}
-                            className="w-100 h-100 mb1-00 f2-00 bg-transparent bn pointer"
+                            className="w-100 h-100 f2-00 bg-transparent bn pointer offers-plus-button"
                         >
-                            +
+                            <span className="offers-plus-symbol" aria-hidden="true"></span>
                         </button>
                     </div>
                 </figure>
@@ -123,9 +122,9 @@ const Offers = ({ openOfferDialog }) => {
                             type="button"
                             aria-label="Open Architect Your Next details"
                             onClick={() => openOfferDialog('architectYourNext')}
-                            className="w-100 h-100 mb1-00 f2-00 bg-transparent bn pointer"
+                            className="w-100 h-100 f2-00 bg-transparent bn pointer offers-plus-button"
                         >
-                            +
+                            <span className="offers-plus-symbol" aria-hidden="true"></span>
                         </button>
                     </div>
                 </figure>
