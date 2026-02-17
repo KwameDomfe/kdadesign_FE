@@ -59,10 +59,10 @@ const HomePageAboutUs = () => {
                             white-90 tc"
                         >
                             <h2 className="f2-00 f4-00-m">
-                                0 %
+                                1  +
                             </h2>
                             <h3 className="fw6 tc f0-75">
-                                Service Offerings 
+                                million training (hours) conducted for employees, globally
                             </h3>
                         </figcaption>
                         

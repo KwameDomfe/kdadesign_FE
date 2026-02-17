@@ -106,3 +106,16 @@
 }*/
 
 /*--x-- Main Headear Styles --x--*/
+
+#experience {
+    position: relative;
+}
+
+#experience figcaption {
+    position: relative;
+    z-index: 2;
+}
+
+#experience > div {
+    pointer-events: none;
+}

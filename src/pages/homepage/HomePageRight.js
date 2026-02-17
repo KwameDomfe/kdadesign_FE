@@ -21,6 +21,7 @@ const HomePageRight = (props) => {
                 grid gtc12
                 bg-${bgColour}
                 vh-100
+                w-100
             `}
         >
             <figure className="
@@ -42,11 +43,10 @@ const HomePageRight = (props) => {
             >   
                 <img src={fgImage} 
                     alt=""
-                    className="gc2s3 gr1s1 h-100 cover"
+                    className="gc1s4 gr1s1 h-100 cover"
                 /> 
                 <div id=""
                     className={`gc1s4 gr1s1
-                        
                         h-100
                         
                         bg-gradientLR
@@ -55,16 +55,17 @@ const HomePageRight = (props) => {
                     `
                 }
                 >
-                    <div className="grid gtc12
-                        justify-center items-center
-                        ggap1-00 h-100 container container80">
-                        <hgroup id=""
-                            className={`${lgcs} gr1s1 flex flex-column`}
+                    <div className="grid gtc12 ggap2-00
+                        h-100 items-center pv4-00
+                        container container80"
                         >
-                            <h2 className="f1-75 f3-00-m mb2-00">
+                        <hgroup id=""
+                            className={`${lgcs} gr1s1 flex flex-column w-100`}
+                        >
+                            <h2 className="f2-00 f3-00-m mb2-00">
                                 {sectionHeading} 
                             </h2>
-                            <p className="f1-25 f2-50-m mb4-00">
+                            <p className="f1-50 f2-50-m mb4-00">
                                 {sectionSubHeading}  
                             </p>
                             
@@ -88,9 +89,12 @@ const HomePageRight = (props) => {
                         </hgroup>
                     
                         <div id="" 
-                            className={`${rgcs} flex flex-column justify-center items-center ggap1-00`}
+                            className={`
+                                ${rgcs} 
+                                flex flex-column flex-row-s flex-column-m ggap1-00`
+                            }
                         >
-                            <div className="gc1s2 flex flex-column justify-between h10-00 
+                            <div className="flex flex-column justify-between h10-00 w14-00-l
                                 ba br0-25 white-90 pa1-00 bg-black-40"
                             >
                                 <hgroup 
@@ -111,7 +115,7 @@ const HomePageRight = (props) => {
                                 </div>
                             </div>
                         
-                            <div className="gc1s2 flex flex-column justify-between h10-00 
+                            <div className="flex flex-column justify-between h10-00 w14-00-l
                                 ba br0-25 white-90 pa1-00 bg-white-10"
                             >
                                 <hgroup 
@@ -132,7 +136,7 @@ const HomePageRight = (props) => {
                                 </div>
                             </div>
                             
-                            <div className="gc1s2 flex flex-column justify-between h10-00
+                            {/* <div className="gc1s2 flex flex-column justify-between h14-00
                                 ba br0-25 white-90 pa1-00 bg-black-40"
                             >
                                 <hgroup 
@@ -151,7 +155,7 @@ const HomePageRight = (props) => {
                                         <b>read more...</b>
                                     </Link>
                                 </div>
-                            </div>
+                            </div> */}
                             
                         </div>
                     </div>

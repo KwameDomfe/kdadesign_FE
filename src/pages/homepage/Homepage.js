@@ -54,9 +54,9 @@ const Homepage = () => {
                         bgColour = 'blue1'
                         bgImage = {second}
                         fgImage = {second}
-                        lgcs = 'gc5s5'
-                        rgcs = 'gc10s3'
-                        flexDirection = 'row-reverse'
+                        lgcs = 'gc2s10 gc4s5-m'
+                        rgcs = 'gc2s10 gc9s4-m'
+                        flexDirection = 'flex-row-s'
                         fgColour = 'gradientLR'
                         sectionHeading = 'Digital Core Capabilities'
                         sectionSubHeading = 'Build vital capabilities to deliver digital outcomes.'
@@ -74,9 +74,8 @@ const Homepage = () => {
                         bgImage = {third}
                         fgImage = {third}
                         fgColour = 'gradientRL'
-                            lgcs = 'gc1s5'
-                            rgcs = 'gc6s3'
-                        // flexDirection = 'flex-row-reverse'
+                        lgcs = 'gc1s10 gc1s5-m'
+                        rgcs = 'gc1s10 gc6s4-m'
                         sectionHeading = 'Digital Operating Model'
                         sectionSubHeading = 'Adopt accelerators to evolve your way of working.'
                         url = 'architect-your-next/digital-operating-model'
@@ -92,8 +91,8 @@ const Homepage = () => {
                         bgColour = 'blue1'
                         bgImage = {fourth}
                         fgImage = {fourth}
-                        lgcs = 'gc5s5'
-                        rgcs = 'gc10s3'
+                        lgcs = 'gc2s10 gc4s5-m'
+                        rgcs = 'gc2s10 gc9s4-m'
                         fgColour = 'gradientRL'
                         sectionHeading = 'Empowering Talent Transformation'
                         sectionSubHeading = 'Embrace the talent revolution to remain relevant in the future.'
