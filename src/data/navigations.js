@@ -46,10 +46,10 @@ export const mainNav = [
     },
     {
         id : 6,
-        name :'accounts/',
+        name :'Pricing',
         icon : first,
-        url : 'accounts/'
-        // url : 'acounts/'
+        url : 'pricing/'
+        // url : 'pricing/'
     },
 ]
 

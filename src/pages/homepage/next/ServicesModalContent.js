@@ -1,8 +1,9 @@
 import React from 'react'
 import second from '../../../images/projects/_partials/accra-ghana-colorful-vector-artmap.jpg'
+import { Link } from 'react-router-dom'
 const ServicesModalContent = () => {
     return (
-        <article className="flex flex-column items-start w-100">
+        <article className="flex flex-column items-start w-100 pv2-00">
             <h3 id="homePage_offer_dialog_title" className="red mt0-00 mb1-00">
                 Service Offerings (<span className="red">Update Section</span>)
             </h3>
@@ -35,6 +36,11 @@ const ServicesModalContent = () => {
             <p className="mt0-00 mb2-00 fw6">
                 Outcome: Measurable progress from planning through execution.
             </p>
+            <Link to="/services"
+                className="pv1-00 ph1-00 bg-black-50 white-90 br0-50"
+            >
+                Explore Services
+            </Link>
         </article>
     )
 }

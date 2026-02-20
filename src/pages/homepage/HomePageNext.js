@@ -81,9 +81,9 @@ const HomePageNext = () => {
                     <button
                         type="button"
                         onClick={closeOfferDialog}
-                        className="bg-black white ba bn pa0-75 ph1-25 pointer"
+                        className="bg-black white ba bn pa0-50 ph1-00 pointer"
                     >
-                        Close
+                        Cancel
                     </button>
                 </div>
             </div>

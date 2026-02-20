@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomePageAboutUs = () => {
   return (
-    <article className="pt4-00 container container90 "
+    <article className="pt4-00 container container80 "
     >
         <header className="tc container w-100 w-60-m pv2-00"
         >
@@ -59,10 +59,10 @@ const HomePageAboutUs = () => {
                             white-90 tc"
                         >
                             <h2 className="f2-00 f4-00-m">
-                                1  +
+                                1M +
                             </h2>
                             <h3 className="fw6 tc f0-75">
-                                million training (hours) conducted for employees, globally
+                                training (hours) conducted for employees.
                             </h3>
                         </figcaption>
                         
@@ -82,7 +82,7 @@ const HomePageAboutUs = () => {
                                 1
                             </h3>
                             <h3 className="fw4 f1-50 ">
-                                
+                                Company Story
                             </h3>
                             <p className="fw2">
                                 
@@ -100,8 +100,8 @@ const HomePageAboutUs = () => {
                             <h3 className="fw6">
                                 2
                             </h3>
-                            <h3 className="fw4">
-                                
+                            <h3 className="fw4 f1-50 ">
+                                Mission, Vision, and Values
                             </h3>
                             <p className="fw2">
                                 
@@ -119,8 +119,8 @@ const HomePageAboutUs = () => {
                             <h3 className="fw6">
                                 3
                             </h3>
-                            <h3 className="fw4">
-                                
+                            <h3 className="fw4 f1-50 ">
+                                Founder Profile
                             </h3>
                             <p className="fw2">
                                 
@@ -138,8 +138,8 @@ const HomePageAboutUs = () => {
                             <h3 className="fw6">
                                 4 
                             </h3>
-                            <h3 className="fw4">
-                                
+                            <h3 className="fw4 f1-50 ">
+                                Partnerships and Alliances
                             </h3>
                             <p className="fw2">
                                 
@@ -160,8 +160,8 @@ const HomePageAboutUs = () => {
                             <h3 className="fw6">
                                 5 
                             </h3>
-                            <h3 className="fw4">
-                                
+                            <h3 className="fw4 f1-50 ">
+                                Why KDA Design Technologies?
                             </h3>
                             <p className="fw2">
                                 

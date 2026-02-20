@@ -47,6 +47,7 @@ import WebApps from './pages/services/WebApps'
 import RevitConsulting from './pages/services/RevitConsulting'
 import ExpertTraining from './pages/services/ExpertTraining'
 import SDEL from './pages/platforms/SDEL';
+import Pricing from './pages/pricing/Pricing';
 
 
 const myRouter = createBrowserRouter(
@@ -155,7 +156,7 @@ const myRouter = createBrowserRouter(
             <Route path = 'info'
                  element  = {
                     < TCL category = 'Info'
-                        desc_1 = 'The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value.'
+                        desc_1 = 'The Info of KDA Design Technologies href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value.'
                         desc_2 = 'The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value.'
                         desc_3 = 'The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value.'
                         url_path_01 = 'team'
@@ -264,6 +265,9 @@ const myRouter = createBrowserRouter(
                 />
             </Route>
 
+            <Route path = 'pricing'
+                element  = {<Pricing />}
+            />
             <Route 
                 path='*'
                 element = { <PageNotFound /> }

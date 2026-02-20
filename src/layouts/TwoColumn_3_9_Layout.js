@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { Link, NavLink, Outlet } from "react-router-dom"
-
+import logo from '../images/kda_design_technologies_Logo--small.png'
 const TwoColumn_3_9_Layout = (props) => {
     
     // Props
@@ -32,31 +32,47 @@ const TwoColumn_3_9_Layout = (props) => {
 
     // JSX
     return (
-        <div className="container container90"
+        <div className="container container80"
         >
             <div className="flex ggap1-00 relative"
             >
-                <aside className="w16-00 bg-black-20 vh-100 pa1-00 mt0-00 sticky top-4"
+                <aside className="flex flex-column justify-between 
+                    w-30 
+                    bg-black-50 
+                    vh-100 
+                    pa1-00 mt0-00 
+                    sticky top-4"
                 >
-                    <h2 className="f1-25">
-                        <Link to =""
-                        >
-                        {category}
-                        </Link>
-                    </h2>
-                    <div>
-                        <p>
-                            {desc_1} 
-                        </p>
-                        <p>
-                            {desc_2}
-                        </p>
-                        <p>
-                            {desc_3}
-                        </p>
+                    <div className="pb1-00 flex flex-column justify-between h-100">
+                        
+                        <div>
+                            <p>
+                                {desc_1} 
+                            </p>
+                            <p>
+                                {desc_2}
+                            </p>
+                            <p>
+                                {desc_3}
+                            </p>
+                        </div>
+                        <header className="flex">
+                            <img src={logo}
+                                className="w1-50 h1-50 mr0-50 br-50"
+                                alt="content icon"
+                            />
+                            <h2 className="f1-25 mb0-00">
+                                <Link to =""
+                                >
+                                 {category}
+                                </Link>
+                            </h2>
+                        </header>
                     </div>
-                    <nav className="bb bt bw3 pv2-00"
+                    
+                    <nav className="bb bt bw3 pv2-00 mb4-00"
                     >
+                        
                         <ul >
                             <li className="mb1-00">
                                 <NavLink to={url_path_01}>
@@ -92,7 +108,7 @@ const TwoColumn_3_9_Layout = (props) => {
                         </ul>
                     </nav>
                 </aside>
-                <main className="w-100 top-6"
+                <main className="w-70 top-6"
                 >
                      <Outlet />
                 </main>

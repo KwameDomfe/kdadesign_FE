@@ -52,12 +52,12 @@ const Homepage = () => {
                 >
                     <HomePageRight 
                         bgColour = 'blue1'
-                        bgImage = {second}
+                        bgImage = {third}
                         fgImage = {second}
-                        lgcs = 'gc2s10 gc4s5-m'
-                        rgcs = 'gc2s10 gc9s4-m'
+                        lgcs = 'gc2s10 gc3s6-m'
+                        rgcs = 'gc2s10 gc9s3-m'
                         flexDirection = 'flex-row-s'
-                        fgColour = 'gradientLR'
+                        // fgColour = 'gradientLR'
                         sectionHeading = 'Digital Core Capabilities'
                         sectionSubHeading = 'Build vital capabilities to deliver digital outcomes.'
                         url = 'architect-your-next/digital-core-capabilities'
@@ -73,9 +73,9 @@ const Homepage = () => {
                         bgColour = 'blue1'
                         bgImage = {third}
                         fgImage = {third}
-                        fgColour = 'gradientRL'
-                        lgcs = 'gc1s10 gc1s5-m'
-                        rgcs = 'gc1s10 gc6s4-m'
+                        // fgColour = 'gradientRL'
+                        lgcs = 'gc2s10 gc2s6-m'
+                        rgcs = 'gc2s10 gc8s3-m'
                         sectionHeading = 'Digital Operating Model'
                         sectionSubHeading = 'Adopt accelerators to evolve your way of working.'
                         url = 'architect-your-next/digital-operating-model'
@@ -91,9 +91,9 @@ const Homepage = () => {
                         bgColour = 'blue1'
                         bgImage = {fourth}
                         fgImage = {fourth}
-                        lgcs = 'gc2s10 gc4s5-m'
-                        rgcs = 'gc2s10 gc9s4-m'
-                        fgColour = 'gradientRL'
+                        lgcs = 'gc2s10 gc3s6-m'
+                        rgcs = 'gc2s10 gc9s3-m'
+                        // fgColour = 'gradientRL'
                         sectionHeading = 'Empowering Talent Transformation'
                         sectionSubHeading = 'Embrace the talent revolution to remain relevant in the future.'
                         url = 'architect-your-next/empowering-talent-transformation'
@@ -117,7 +117,7 @@ const Homepage = () => {
                 </section>
                 
                 <section id="homePage_Contact_Us" 
-                    className="gc1s12 container container90 bg-white gray pv4-00 tc"
+                    className="gc1s12 container container80 bg-white gray pv4-00 tc"
                 >
                     <HomepageContactUs />
                 </section>
@@ -126,9 +126,11 @@ const Homepage = () => {
 
             {/* <!-- Page Footer Start --> */}
             <footer id = "homePage__footer"
-                className="bg-gray gc1s12 pv1-00 tc"
+                className="bg-gray gc1s12 pv1-00 tr "
             >
-                Home Page Footer
+                <div className="white-90 container container80">
+                    Home Page
+                </div>
             </footer>
             {/* <!-- Page Footer End --> */}
         </div>

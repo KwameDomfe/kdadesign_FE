@@ -24,8 +24,10 @@ const HomePageAYN = () => {
         >
             <div id=""
                 className="flex flex-column justify-center
-                    ml8-00-m w-100 h-100 
-                    pa1-00
+                    h-100 
+                    pa1-00 pa0-00-m
+                    container
+                    
                 "
             >
                 <div

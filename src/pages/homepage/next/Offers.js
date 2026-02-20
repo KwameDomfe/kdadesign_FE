@@ -5,7 +5,7 @@ const Offers = ({ openOfferDialog }) => {
     
     return (
         <section id="homePage_our_offers"
-            className="grid gtc12 mv2-00 container container80 white-90"
+            className="grid gtc12 pv4-00 container container80 white-90"
         >
             <div className="gc1s12 gr1s1 gc1s6-s gc1s3-m gr1s1-m"
             >

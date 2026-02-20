@@ -3,59 +3,56 @@ import React from 'react'
 const HomepageContactUs = () => {
   return (
     <div>
-        <header className="tc container pa2-00">
+        <header className="tc container pa1-00 pa2-00-m">
             <h2 className="f3-00">Contact Us</h2>
         </header>
-        <main className='flex flex-column'>
-            <div className="w-100 h-100"
-            >
-                <form className="black-60 
-                    w-100 h-100 
+        <main className='flex items-center flex-row-m flex-column justify-center'>
+            <div className="w-50-m h-100"
+            >   
+                <div>
+                    <h2>
+                    Location: 123 Main Street, Accra, Ghana
+                    </h2>
+                    <h2>
+                        Phone: +233 123 456 789
+                    </h2>       
+                    <h2>
+                        Email:  
+                        <a href="mailto:info@kdadesign.com">info@kdadesign.tech</a>
+                    </h2>
+                </div>
+                
+                <div className="black-60 
+                    h-100 
                     f1-25"
                 >
-                    <div className="h-100 w-100 flex flex-column justify-between pa1-00">
-                        <header className="h4-00 flex items-center justify-center bg-black-60 white-90">
-                            Form header
-                        </header>
-                        <div className="flex items-start justify-between flex-column"
+                    <div className="h-100 flex flex-column justify-between pa1-00"
+                    >
+                        <div className="flex items-center justify-between flex-column"
                         >
-                            <div className="mb1-00 w-100"
+                            
+                            <div className="mb1-00"
                             >
-                                <label className="mb1-00 w-100" 
-                                    htmlFor="name"
-                                >name <br/>
-                                    <input id="name" 
-                                        className="pv0-50 w-100" 
-                                        type="text" 
-                                        name="name"
-                                        placeholder="name please.."
-                                    />
-                                </label>
-                            </div>
-                            <div className="mb1-00 w-100">
-                                <label htmlFor="email">email <br/>
-                                    <input id="email" 
-                                        className="pv0-50 w-100" 
-                                        type="email" 
-                                        name="email"
-                                        placeholder="email please.."
-                                    />
-                                </label>
-                            </div>
-                            <button type="submit"
-                                className="mb1-00 pa0-50"
+                                inquiries
+                            </div> 
+                            <div className="mb1-00"
                             >
-                                Contact Us
-                            </button>
+                                Request for Services
+                            </div>
+                            <div className="mb1-00"
+                            >
+                                Customer Support
+                            </div>
+                           
                         </div>
-                        <footer className="h4-00 flex items-center justify-center bg-black-60 white-90">
-                            Form footer
-                        </footer>
+                        
                     </div>
-                </form>
+
+                </div>
+
             </div>
             
-            <div className="w-100 h-100 gray pa1-00">
+            <div className="w-50-m h-100 gray pa1-00">
                 <div className="mb4-00">
                     <h2 className="f3-00 f4-00-m">Let us <br/> help you to architect your next...</h2>
                 </div>

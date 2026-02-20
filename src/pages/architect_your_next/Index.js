@@ -1,75 +1,301 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import second from '../../images/placeholders/landscape_Images/landscape_01.png'
 const ArchitectYourNext = () => {
   
     return (
         <article id = ""
-            className = "tc bg-black"
+            className = ""
         >
             <div className="flex flex-column justify-between min-vh-90"
             >
                 <header id = ""
-                    className="ba pa1-00 gold"
+                    className="ba pa1-00 gold container container80 sticky top-4 z-5 bg-white"
                 >
-                    Architect Your Next Header
+                    <nav aria-label="Architect Your Next navigation">
+                        <ul className="list pa0 ma0">
+                            <li>
+                                <details>
+                                    <summary className="pointer">Architect Your Next</summary>
+                                    <nav aria-label="Architect Your Next sections">
+                                        <ul className="list pa1-00 ma0">
+                                            <li>
+                                                <Link to="architecting-new-possibilities" className="gold">
+                                                    Architecting New Possibilities
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="digital-core-capabilities" className="gold">
+                                                    Digital Core Capabilities
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="digital-operating-model" className="gold">
+                                                    Digital Operating Model
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="empowering-talent-transformation" className="gold">
+                                                    Empowering Talent Transformation
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="tales-of-transformation" className="gold">
+                                                    Tales of Transformation
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </details>
+                            </li>
+                        </ul>
+                    </nav>
                 </header>
             
                 <main id = "" 
-                    className="mv8-00"
+                    className="0"
                 >
-                    <div id="ayn" 
-                        className="flex flex-column"
+                    <article id=""
+                        className="container container80    "
                     >
-                        <section id="ayn__anp"
-                            className="mv2-00"
+                        <section id=""
+                            className="vh-100
+                                mv1-00"
                         >
-                            <Link to ="architecting-new-possibilities"
-                                className="gold"
-                            >
-                                <h2>Architecting New Possibilities</h2>
-                            </Link>
+                            <img src={second}
+                                alt="Architect Your Next Banner"
+                                className="w-100 h-100 cover"
+                            />
                         </section>
-                        <section id="ayn__dcc"
-                            className="mv2-00"
+                        <section id=""
+                            className="
+                                mv1-00 container container80"
                         >
-                            <Link to = "digital-core-capabilities"
-                                className="gold"
-                            >
-                                <h2>Digital Core Capabilities</h2>
-                            </Link>
+                            <h2 className="f3-00">Overview</h2>  
+                            <div className="flex ggap2-00 mb1-00">
+                                <div >
+                                    <p className="f1-50 lh-copy">In an era defined by rapid technological advancements and shifting market dynamics, the ability to architect your next move is crucial for sustained success. This section provides an overview of the key strategies and insights that can help businesses navigate the complexities of the digital landscape and position themselves for future growth.</p>
+                                </div>
+                                <div className="f1-25">
+                                    <p>
+                                        From embracing emerging technologies to fostering a culture of innovation, we explore the essential elements that contribute to successful transformation. Discover how to identify new opportunities, mitigate risks, and create a roadmap for your organization's future in this ever-evolving business environment.
+                                    </p>
+                                    <p>
+                                        Whether you're a seasoned executive or an aspiring leader, this section offers valuable perspectives and actionable insights to help you architect your next move with confidence and agility.
+                                    </p>
+                                </div>
+                            </div>
                         </section>
-                        <section id="ayn__dom"
-                            className="mv2-00"
+                        <section id="" 
+                            className="vh-75
+                                mv4-00 ba"
                         >
-                            <Link to = "digital-operating-model"
-                                className="gold"
-                            >
-                                <h2>Digital Operating model</h2>
-                            </Link>
+                            <h1 className="mb1-00 tc f4-00">
+                               Video Content
+                            </h1>
+                           
                         </section>
-                        <section id="ayn__ett"
-                            className="mv2-00"
+                        <section id="" 
+                            className=" bg-white-80
+                                mv1-00"
                         >
-                            <Link to = "empowering-talent-transformation"
-                                className="gold"
-                            >
-                                <h2>Empowering Talent Transformation</h2>
-                            </Link>
+                              <article id="architect_your_next__contents"
+                                className="grid gtc12 ggap1-00 ba pa1-00 "
+                            >   
+                                <section id=""
+                                    className="gc1s4 vh-30
+                                        ba pa1-00  h-100 w-100"
+                                >
+                                    <img src={second} alt="Report 1"
+                                    />
+                                    <p>Digital Core Capabilities </p>
+                                    {/* <p> 
+                                        Explore the essential capabilities for thriving in the digital era, including data analytics, cloud computing, and cybersecurity.
+                                    </p> */}
+                                    <Link to="/architect-your-next/digital-core-capabilities/">
+                                        Learn More
+                                    </Link>
+                                </section>
+                                <section id=""
+                                    className="gc1s4 gr2s1 vh-30
+                                        ba pa1-00  h-100 w-100"
+                                >
+                                    <img src={second} alt="Report 2"
+                                    />
+                                    <p>Digital Operating Model</p>
+                                    <Link to="/architect-your-next/digital-operating-model/">
+                                        Learn More
+                                    </Link>
+                                </section>
+                                <section id=""
+                                    className="gc5s4 gr1s2
+                                        ba pa1-00  h-100 w-100"
+                                >
+                                    <img src={second} 
+                                        alt="Report 3"
+                                        className="h-100 cover"
+                                    />
+                                    <p>Tales of Transformation</p>
+                                    <Link to="/architect-your-next/tales-of-transformation/">
+                                        Learn More
+                                    </Link>
+                                </section>
+                                <section id=""
+                                    className="gc9s4 gr1s1vh-30
+                                        ba pa1-00  h-100 w-100"
+                                >
+                                    <img src={second} alt="Report 4"
+                                    />
+                                    <p>Empowering Talent Transformation</p>
+                                    <Link to="/architect-your-next/empowering-talent-transformation/">
+                                        Learn More
+                                    </Link>
+                                </section>
+                                <section id=""
+                                    className="gc9s4 gr2s1vh-30
+                                        ba pa1-00  h-100 w-100"
+                                >
+                                    <img src={second} alt="Report 5"
+                                    />
+                                    <p>Architecting New Possibilities</p>
+                                    <Link to="/architect-your-next/architecting-new-possibilities/">
+                                        Learn More
+                                    </Link>
+                                </section>
+                            </article> 
                         </section>
-                        <section id="ayn__tot"
-                            className="mv2-00"
+                        <section id="" 
+                            className="
+                                mv1-00"
                         >
-                            <Link to = "tales-of-transformation"
-                                className="gold"
-                            >
-                            <h2>Tales of Transformation</h2>
-                            </Link>
+                            <h1 className="mb1-00 f4-00">
+                                KDA Design Technologies Research
+                            </h1>
+                           
+                            <p className="mb2-00 f2-00">
+                                Exclusive report on the impact of digital disruption across industries.
+                            </p>
+                            <article id=""
+                                className="grid gtc12 ggap1-00 ba pa1-00 "
+                            >   
+                                    <section id=""
+                                        className="gc1s6 vh-30
+                                            ba pa1-00  w-100"
+                                    >
+                                        <img src={second} alt="Report 1"
+                                        />
+                                        <p>Report 1</p>
+                                    </section>
+                                    <section id=""
+                                        className="gc7s3 vh-30
+                                            ba pa1-00  w-100"
+                                    >
+                                        <img src={second} alt="Report 2"
+                                        />
+                                        <p>Report 2</p>
+                                    </section>
+                                    <section id=""
+                                        className="gc10s3 gr1s1
+                                            ba pa1-00  w-100"
+                                    >
+                                        <img src={second} alt="Report 3"
+                                        />
+                                        <p>Report 3</p>
+                                    </section>
+                                    <section id=""
+                                        className="gc1s3
+                                            ba pa1-00  w-100"
+                                    >
+                                        <img src={second} alt="Report 4"
+                                        />
+                                        <p>Report 4</p>
+                                    </section>
+                                    <section id=""
+                                        className="gc4s3 vh-30
+                                            ba pa1-00  w-100"
+                                    >
+                                        <img src={second} alt="Report 5"
+                                        />
+                                        <p>Report 5</p>
+                                    </section>
+                                    <section id=""
+                                        className="gc7s3 vh-30
+                                            ba pa1-00  w-100"
+                                    >
+                                        <img src={second} alt="Report 6"
+                                        />
+                                        <p>Report 6</p>
+                                    </section>
+                                    <section id=""
+                                        className="gc10s3 vh-30
+                                            ba pa1-00  w-100"
+                                    >
+                                        <img src={second} alt="Report 7"
+                                        />
+                                        <p>Report 7</p>
+                                    </section>
+                            </article>
+                            <footer className="mv1-00 f2-00 ">
+                                KDA Design Technologies Research & Development
+                            </footer>
                         </section>
-                    </div>
+                        <section id="" 
+                            className="vh-75
+                                mv1-00"
+                        >
+                            
+                            <h1 className="mb1-00 f4-00">
+                                Thought Leadership
+                            </h1>
+                            <p className="mb2-00 f2-00">
+                                Our leaders share insights on Live Enterprise.
+                            </p>
+                            <article id=""
+                                className=" flex ggap1-00"
+                            >   
+                                    <section id=""
+                                        className="vh-50
+                                            ba pa1-00 h-100 w-100"
+                                    >
+                                        <p>Article 1</p>
+
+                                        <p>Image Placeholder</p>
+
+                                        <p>a link to the article</p>
+                                    </section>
+                                    <section id=""
+                                        className="vh-50
+                                            ba pa1-00 h-100 w-100"
+                                    >
+                                        <p>Article 2</p>
+                                        <p>Image Placeholder</p>
+                                        <p>a link to the article</p>
+                                    </section>
+                                    <section id=""
+                                        className="vh-50
+                                            ba pa1-00 h-100 w-100"
+                                    >
+                                        <p>Article 3</p>
+                                    </section>  
+                                    <section id=""
+                                        className="vh-50
+                                            ba pa1-00 h-100 w-100" 
+                                    >
+                                        <p>Article 4</p>
+                                    </section>
+                            </article>
+                            <div className="tc mt1-00">
+                                <Link to = "thought-leadership"
+                                    className="tc"
+                                >
+                                    Read More
+                                </Link>
+                            </div>
+                        </section>
+                    </article>
                 </main>
                 
-                <footer className="ba pa1-00 gold"
+                <footer className="ba pa1-00 tc"
                 >
                     Architect Your Next Footer
                 </footer>

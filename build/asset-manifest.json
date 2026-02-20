@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.b64083d1.css",
-    "main.js": "/static/js/main.b6398c1e.js",
-    "static/media/portrait-01.jpg": "/static/media/portrait-01.993ab23c3d244c4bfe34.jpg",
+    "main.css": "/static/css/main.45ee050e.css",
+    "main.js": "/static/js/main.d208e986.js",
+    "static/media/featured_grid.jpg": "/static/media/featured_grid.55dcd0e9fdcef2669490.jpg",
+    "static/media/accra-ghana-colorful-vector-artmap.jpg": "/static/media/accra-ghana-colorful-vector-artmap.6fd8734e6b97aaf91079.jpg",
+    "static/media/4-2b.jpg": "/static/media/4-2b.8b07d7b21544e89ed5d0.jpg",
+    "static/media/landscape-02.png": "/static/media/landscape-02.102eb55156a315dce840.png",
     "static/media/linkedin.svg": "/static/media/linkedin.33129ba0cdc4cb48fb4e6b583ac1060e.svg",
-    "static/media/close-svgrepo-com_1.svg": "/static/media/close-svgrepo-com_1.3679f386ffd792ab51f2aac881e12083.svg",
     "index.html": "/index.html",
+    "static/media/youtube.svg": "/static/media/youtube.643a7e472730ec77d8bdc252cf23edc0.svg",
+    "static/media/twitter.svg": "/static/media/twitter.66fd1faabbfa4faee2bbfd08cd71be83.svg",
+    "static/media/close-svgrepo-com_1.svg": "/static/media/close-svgrepo-com_1.3679f386ffd792ab51f2aac881e12083.svg",
     "static/media/facebook.svg": "/static/media/facebook.4c38149b469ee5615f4a02295a5f8d80.svg",
     "static/media/burger-menu-svgrepo-com.svg": "/static/media/burger-menu-svgrepo-com.fc12fbd678bea2ce4ec9524cbe12a170.svg",
-    "main.b64083d1.css.map": "/static/css/main.b64083d1.css.map",
-    "main.b6398c1e.js.map": "/static/js/main.b6398c1e.js.map"
+    "main.45ee050e.css.map": "/static/css/main.45ee050e.css.map",
+    "main.d208e986.js.map": "/static/js/main.d208e986.js.map"
   },
   "entrypoints": [
-    "static/css/main.b64083d1.css",
-    "static/js/main.b6398c1e.js"
+    "static/css/main.45ee050e.css",
+    "static/js/main.d208e986.js"
   ]
 }
