@@ -5,7 +5,7 @@ const HomePageRight = (props) => {
     
     const {
         bgImage, 
-        fgImage, 
+        // fgImage, 
         sectionHeading, 
         sectionSubHeading, 
         bgColour, 
