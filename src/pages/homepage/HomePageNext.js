@@ -8,15 +8,24 @@ import IndustriesModalContent from './next/IndustriesModalContent'
 import ArchitectYourNextModalContent from './next/ArchitectYourNextModalContent'
 import ArchitectYourNext from './next/ArchitectYourNext'
 import ArchitectYourNextHeader from './next/ArchitectYourNextHeader'
+import { homePageOfferKeys } from '../../data/homePageData'
+
 const HomePageNext = () => {
     const [activeOffer, setActiveOffer] = useState(null)
     const [isModalVisible, setIsModalVisible] = useState(false)
-    const offerComponents = {
+    const offerComponentRegistry = {
         platforms: PlatformsModalContent,
         services: ServicesModalContent,
         industries: IndustriesModalContent,
         architectYourNext: ArchitectYourNextModalContent
     }
+    const offerComponents = homePageOfferKeys.reduce((accumulator, key) => {
+        if (offerComponentRegistry[key]) {
+            accumulator[key] = offerComponentRegistry[key]
+        }
+        return accumulator
+    }, {})
+
     const ActiveOfferComponent = activeOffer ? offerComponents[activeOffer] : null
 
     const openOfferDialog = (offerKey) => {

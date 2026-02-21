@@ -1,50 +1,50 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import second from '../../images/placeholders/landscape_Images/landscape_01.png'
+import { industriesPageData } from '../../data/industriesPageData'
+import { getIndustriesPageContent } from '../../services/pageContentApi'
 
-const pageSections = [
-    { id: 'overview', label: 'Overview' },
-    { id: 'offerings', label: 'Our Offerings' },
-    { id: 'insights', label: 'Insights' },
-    { id: 'whats-new', label: "What's New" },
-    { id: 'success-stories', label: 'Success Stories' },
-]
-
-const industryOfferings = [
-    { name: 'Education', to: '/industries/education' },
-    { name: 'Architecture, Engineering & Construction', to: '/industries/aec' },
-    { name: 'Civic, Religious and Cultural' },
-    { name: 'Commerce' },
-    { name: 'Healthcare' },
-    { name: 'Manufacturing' },
-    { name: 'Financial Services' },
-    { name: 'Technology' },
-    { name: 'Energy' },
-]
-
-const insights = [
-    { type: 'Feature', to: '/architect-your-next/digital-core-capabilities/' },
-    { type: 'Publication', to: '/architect-your-next/digital-operating-model/' },
-    { type: 'Blog', to: '/architect-your-next/tales-of-transformation/' },
-    { type: 'White Paper', to: '/architect-your-next/empowering-talent-transformation/' },
-    { type: 'Technical Report', to: '/architect-your-next/architecting-new-possibilities/' },
-]
-
-const whatsNewItems = [
-    'Technology trends and outlook',
-    'Industry thought leadership highlights',
-    'Customer stories and delivery updates',
-    'Events, announcements and releases',
-]
-
-const successStories = [
-    'Enterprise digital transformation',
-    'Operational excellence in delivery',
-    'Customer experience modernization',
-    'Scalable platform enablement',
-]
+const responsiveGridStyle = {
+    gridTemplateColumns: 'repeat(auto-fit, minmax(256px, 1fr))',
+}
 
 const Industries = () => {
+    const [pageContent, setPageContent] = useState(industriesPageData)
+    const [isLoading, setIsLoading] = useState(true)
+    const [apiError, setApiError] = useState('')
+
+    useEffect(
+        () => {
+            let isMounted = true
+
+            const loadContent = async () => {
+                const result = await getIndustriesPageContent()
+
+                if (!isMounted) {
+                    return
+                }
+
+                setPageContent(result.data)
+                setApiError(result.error ? 'Using fallback content while API is unavailable.' : '')
+                setIsLoading(false)
+            }
+
+            loadContent()
+
+            return () => {
+                isMounted = false
+            }
+            
+        }, []
+    )
+
+    const {
+        pageSections = [],
+        industryOfferings = [],
+        insights = [],
+        contentSections = [],
+    } = pageContent
+
     return (
         <article>
             <div className="flex flex-column justify-between min-vh-90">
@@ -77,6 +77,16 @@ const Industries = () => {
 
                 <main>
                     <article className="">
+                        {isLoading && (
+                            <section className="container container80 mv1-00">
+                                <p>Loading content...</p>
+                            </section>
+                        )}
+                        {apiError && (
+                            <section className="container container80 mv1-00">
+                                <p>{apiError}</p>
+                            </section>
+                        )}
                         <section className="vh-100 mv1-00">
                             <img src={second}
                                 alt="Industries Banner"
@@ -139,7 +149,7 @@ const Industries = () => {
                             <article
                                 id="architect_your_next__contents"
                                 className="grid ggap1-00 ba pa1-00"
-                                style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(256px, 1fr))' }}
+                                style={responsiveGridStyle}
                             >
                                 {insights.map((item, index) => (
                                     <section
@@ -158,50 +168,32 @@ const Industries = () => {
                                 ))}
                             </article> 
                         </section>
-                        <section id="whats-new" className="mv1-00 container container80">
-                            <h1 className="mb1-00 f4-00">
-                                What's New in Industries
-                            </h1>
-                           
-                            <p className="mb2-00 f2-00">
-                                The latest in technology, thought leadership and customer stories
-                            </p>
-                            <article
-                                className="grid ggap1-00"
-                                style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(256px, 1fr))' }}
-                            >
-                                {whatsNewItems.map((item, index) => (
-                                    <section key={item} className="vh-50 ba pa1-00 h-100 w-100">
-                                        <p>{`Article ${index + 1}`}</p>
-                                        <p>{item}</p>
-                                        <p>Content update coming soon</p>
-                                    </section>
-                                ))}
-                            </article>
-                            <footer className="mv1-00 f2-00 gold">
-                                KDA Design Technologies Research & Development
-                            </footer>
-                        </section>
-                        <section id="success-stories" className="mv1-00 container container80">
-                            <h1 className="mb1-00 f4-00">
-                                Success Stories
-                            </h1>
-                            <p className="mb2-00 f2-00">
-                                Find out how we are enabling global enterprises to navigate their next by adapting to changing technology, business and customer landscape.
-                            </p>
-                            <article
-                                className="grid ggap1-00"
-                                style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(256px, 1fr))' }}
-                            >
-                                {successStories.map((story, index) => (
-                                    <section key={story} className="vh-50 ba pa1-00 h-100 w-100">
-                                        <p>{`Story ${index + 1}`}</p>
-                                        <p>{story}</p>
-                                        <p>Case study details coming soon</p>
-                                    </section>
-                                ))}
-                            </article>
-                        </section>
+                        {contentSections.map((section) => (
+                            <section id={section.id} className="mv1-00 container container80" key={section.id}>
+                                <h1 className="mb1-00 f4-00">
+                                    {section.title}
+                                </h1>
+                                <p className="mb2-00 f2-00">
+                                    {section.subtitle}
+                                </p>
+                                <article className="grid ggap1-00" style={responsiveGridStyle}>
+                                    {section.items.map((item, index) => (
+                                        <section key={`${section.id}-${item}`} 
+                                            className="vh-50 ba pa1-00 h-100 w-100"
+                                        >
+                                            <p>{`${section.itemPrefix} ${index + 1}`}</p>
+                                            <p>{item}</p>
+                                            <p>{section.trailingNote}</p>
+                                        </section>
+                                    ))}
+                                </article>
+                                {section.footerText && (
+                                    <footer className="mv1-00 f2-00 gold">
+                                        {section.footerText}
+                                    </footer>
+                                )}
+                            </section>
+                        ))}
                     </article>
                 </main>
                 

@@ -1,0 +1,56 @@
+export const industriesPageData = {
+    pageSections: [
+        { id: 'overview', label: 'Overview' },
+        { id: 'offerings', label: 'Our Offerings' },
+        { id: 'insights', label: 'Insights' },
+        { id: 'whats-new', label: "What's New" },
+        { id: 'success-stories', label: 'Success Stories' },
+    ],
+    industryOfferings: [
+        { name: 'Education', to: '/industries/education' },
+        { name: 'Architecture, Engineering & Construction', to: '/industries/aec' },
+        { name: 'Civic, Religious and Cultural' },
+        { name: 'Commerce' },
+        { name: 'Healthcare' },
+        { name: 'Manufacturing' },
+        { name: 'Financial Services' },
+        { name: 'Technology' },
+        { name: 'Energy' },
+    ],
+    insights: [
+        { type: 'Feature', to: '/architect-your-next/digital-core-capabilities/' },
+        { type: 'Publication', to: '/architect-your-next/digital-operating-model/' },
+        { type: 'Blog', to: '/architect-your-next/tales-of-transformation/' },
+        { type: 'White Paper', to: '/architect-your-next/empowering-talent-transformation/' },
+        { type: 'Technical Report', to: '/architect-your-next/architecting-new-possibilities/' },
+    ],
+    contentSections: [
+        {
+            id: 'whats-new',
+            title: "What's New in Industries",
+            subtitle: 'The latest in technology, thought leadership and customer stories',
+            itemPrefix: 'Article',
+            items: [
+                'Technology trends and outlook',
+                'Industry thought leadership highlights',
+                'Customer stories and delivery updates',
+                'Events, announcements and releases',
+            ],
+            trailingNote: 'Content update coming soon',
+            footerText: 'KDA Design Technologies Research & Development',
+        },
+        {
+            id: 'success-stories',
+            title: 'Success Stories',
+            subtitle: 'Find out how we are enabling global enterprises to navigate their next by adapting to changing technology, business and customer landscape.',
+            itemPrefix: 'Story',
+            items: [
+                'Enterprise digital transformation',
+                'Operational excellence in delivery',
+                'Customer experience modernization',
+                'Scalable platform enablement',
+            ],
+            trailingNote: 'Case study details coming soon',
+        },
+    ],
+}

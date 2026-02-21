@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { homePageRightDefaults } from '../../data/homePageData'
 
 const HomePageRight = (props) => {
     
@@ -12,7 +13,11 @@ const HomePageRight = (props) => {
         fgColour,
         lgcs,
         rgcs, 
-        url 
+        url,
+        primaryCtaLabel = homePageRightDefaults.primaryCtaLabel,
+        secondaryCtaLabel = homePageRightDefaults.secondaryCtaLabel,
+        secondaryCtaTo = homePageRightDefaults.secondaryCtaTo,
+        teaserCards = homePageRightDefaults.teaserCards,
 
     } = props
     
@@ -68,18 +73,17 @@ const HomePageRight = (props) => {
                                 
                                 <div className="flex justify-start items-center ttu"
                                 >
-                                    <div className="w6-00 br0-25 pa0-50 mr1-00 bg-white ba tc"
-                                    >
+                                    <div className="w6-00 br0-25 pa0-50 mr1-00 bg-white ba tc">
                                         <Link to = {url}
                                             className="gray b"
                                         >
-                                            explore...
+                                            {primaryCtaLabel}
                                         </Link>     
                                     </div>
                                     <div className="w6-00 br0-25 pa0-50 ba tc">
-                                        <Link to = ""
+                                        <Link to = {secondaryCtaTo}
                                             className="white-90 b">
-                                            pricing...
+                                            {secondaryCtaLabel}
                                         </Link>
                                     </div>
                                 </div>
@@ -91,48 +95,26 @@ const HomePageRight = (props) => {
                                     flex flex-column items-end flex-row-s flex-column-m ggap1-00`
                                 }
                             >
-                                <div  className="grid ggap1-00">
-                                    <div className="flex flex-column justify-between h10-00 w14-00-l
-                                         br0-25 white-90 pa1-00 bg-black-40"
-                                    >
-                                        <hgroup 
-                                        >
-                                            <h3 className="mb0-50 f1-00 ">
-                                                doloribus nesciunt amet consect
-                                            </h3>
-                                            <h5 className="fw4 mb0-50">
-                                                Lorem ipsum dolor sit amet consect, adipisicing elit. quid neque amet veniam.
-                                            </h5>
-                                        </hgroup>
-                                        <div>
-                                            <Link to=""
-                                                className="mb0-00 ba ph0-50 pv0-25 white-90"
-                                            >
-                                                <b>read more...</b>
-                                            </Link>
+                                <div className="grid ggap1-00">
+                                    {teaserCards.map((card, index) => (
+                                        <div className={card.cardClassName} key={`${card.title}-${index}`}>
+                                            <hgroup>
+                                                <h3 className="mb0-50 f1-00 ">
+                                                    {card.title}
+                                                </h3>
+                                                <h5 className="fw4 mb0-50">
+                                                    {card.description}
+                                                </h5>
+                                            </hgroup>
+                                            <div>
+                                                <Link to={card.linkTo}
+                                                    className="mb0-00 ba ph0-50 pv0-25 white-90"
+                                                >
+                                                    <b>{card.linkLabel}</b>
+                                                </Link>
+                                            </div>
                                         </div>
-                                    </div>
-                                
-                                    <div className="flex flex-column justify-between h10-00 w14-00-l
-                                        br0-25 white-90 pa1-00 bg-white-10"
-                                    >
-                                        <hgroup 
-                                        >
-                                            <h3 className="mb0-50 f1-00 ">
-                                                doloribus nesciunt amet consect
-                                            </h3>
-                                            <h5 className="fw4 mb0-50">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. veniam.
-                                            </h5>
-                                        </hgroup>
-                                        <div>
-                                            <Link to=""
-                                                className="mb0-00 ba ph0-50 pv0-25 white-90"
-                                            >
-                                                <b>read more...</b>
-                                            </Link>
-                                        </div>
-                                    </div> 
+                                    ))}
                                 </div>
                                 
                             </div>

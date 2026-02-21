@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 import HomePageNav from './HomePageNav'
 import HomePageAYN from './HomePageAYN'
-// import HomePageLeft from './HomePageLeft'
 import HomePageRight from './HomePageRight'
 import HomePageNext from './HomePageNext'
 import HomePageAboutUs from './HomePageAboutUs'
 import HomepageContactUs from './HomepageContactUs'
+import { homePageRightSections } from '../../data/homePageData'
 
 import second from '../../images/placeholders/landscape_Images/featured_grid.jpg'
 import third from '../../images/placeholders//landscape_Images/landscape_01.png'
@@ -13,6 +13,11 @@ import fourth from '../../images/placeholders/landscape_Images/landscape-02.png'
 
 
 const Homepage = () => {
+    const sectionImages = {
+        second,
+        third,
+        fourth,
+    }
     
     useEffect(() => {
         window.scroll(0,0);
@@ -44,63 +49,21 @@ const Homepage = () => {
                 </section>
                 {/* <!-- Architect Your Next End --> */}
 
-                {/* <!-- Digital Core Capabilities Start --> */}
-                <section id="homePage_digital_core_capablities"
-                    className="gc1s12
-                        bb bw3 
-                        bg-black-50" 
-                >
-                    <HomePageRight 
-                        bgColour = 'blue1'
-                        bgImage = {third}
-                        fgImage = {second}
-                        lgcs = 'gc2s10 gc3s6-m'
-                        rgcs = 'gc2s10 gc9s3-m'
-                        flexDirection = 'flex-row-s'
-                        // fgColour = 'gradientLR'
-                        sectionHeading = 'Digital Core Capabilities'
-                        sectionSubHeading = 'Build vital capabilities to deliver digital outcomes.'
-                        url = 'architect-your-next/digital-core-capabilities'
-                    />
-                </section>
-                {/* <!-- Digital Core Capabilities End --> */}
-
-                {/* <!-- Digital Operating Models Start --> */}
-                <section id="homePage_operating-model"
-                    className="gc1s12 bb bw3" 
-                >
-                    <HomePageRight 
-                        bgColour = 'blue1'
-                        bgImage = {third}
-                        fgImage = {third}
-                        // fgColour = 'gradientRL'
-                        lgcs = 'gc2s10 gc2s6-m'
-                        rgcs = 'gc2s10 gc8s3-m'
-                        sectionHeading = 'Digital Operating Model'
-                        sectionSubHeading = 'Adopt accelerators to evolve your way of working.'
-                        url = 'architect-your-next/digital-operating-model'
-                    />
-                </section>
-                {/* <!-- Digital Operating Models End --> */}
-
-                {/* <!-- Empower Talent Transformations Start --> */}
-                <section id="homePage_talent_transformation"
-                    className="gc1s12 bb bw3" 
-                >
-                    <HomePageRight 
-                        bgColour = 'blue1'
-                        bgImage = {fourth}
-                        fgImage = {fourth}
-                        lgcs = 'gc2s10 gc3s6-m'
-                        rgcs = 'gc2s10 gc9s3-m'
-                        // fgColour = 'gradientRL'
-                        sectionHeading = 'Empowering Talent Transformation'
-                        sectionSubHeading = 'Embrace the talent revolution to remain relevant in the future.'
-                        url = 'architect-your-next/empowering-talent-transformation'
-                    />
-
-                </section>
-                {/* <!-- Empower Talent Transformations End --> */}
+                {homePageRightSections.map((section) => (
+                    <section key={section.id} id={section.id} className={section.sectionClassName}>
+                        <HomePageRight
+                            bgColour={section.bgColour}
+                            bgImage={sectionImages[section.bgImageKey]}
+                            fgImage={sectionImages[section.fgImageKey]}
+                            lgcs={section.lgcs}
+                            rgcs={section.rgcs}
+                            flexDirection={section.flexDirection}
+                            sectionHeading={section.sectionHeading}
+                            sectionSubHeading={section.sectionSubHeading}
+                            url={section.url}
+                        />
+                    </section>
+                ))}
                 
                 <section id="homePage_the_next" 
                     className="gc1s12 min-vh-100 

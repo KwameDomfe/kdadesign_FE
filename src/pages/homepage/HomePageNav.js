@@ -1,22 +1,11 @@
 import { useEffect, useState } from 'react'
-
-const NAV_ITEMS = [
-    { sectionId: 'homePage_architect_your_next', label: 'architect your next' },
-    { sectionId: 'homePage_digital_core_capablities', label: 'Core Capabilities' },
-    { sectionId: 'homePage_operating-model', label: 'Operating Models' },
-    { sectionId: 'homePage_talent_transformation', label: 'Talent Transformations' },
-    { sectionId: 'homePage_the_next', label: 'The Next' },
-    { sectionId: 'homePage_About_Us', label: 'About Us' },
-    { sectionId: 'homePage_Contact_Us', label: 'Contact Us' }
-]
-
-const LIGHT_BACKGROUND_SECTIONS = ['homePage_the_next', 'homePage_About_Us', 'homePage_Contact_Us']
+import { homePageLightBackgroundSections, homePageNavItems } from '../../data/homePageData'
 
 const HomePageNav = () => {
     const [activeSection, setActiveSection] = useState('homePage_architect_your_next')
 
     useEffect(() => {
-        const sectionIds = NAV_ITEMS.map((item) => item.sectionId)
+        const sectionIds = homePageNavItems.map((item) => item.sectionId)
 
         const sections = sectionIds
             .map((id) => document.getElementById(id))
@@ -55,7 +44,7 @@ const HomePageNav = () => {
             return 'gold'
         }
 
-        return LIGHT_BACKGROUND_SECTIONS.includes(sectionId) ? 'black b' : 'white b'
+        return homePageLightBackgroundSections.includes(sectionId) ? 'black b' : 'white b'
     }
 
   return (
@@ -69,7 +58,7 @@ const HomePageNav = () => {
                 pv1-50"
         >
             {
-                NAV_ITEMS.map(
+                homePageNavItems.map(
                     (item) => (
                         <li
                             key={item.sectionId}
