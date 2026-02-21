@@ -11,9 +11,10 @@ const Services = () => {
             <div className="flex flex-column justify-between min-vh-90"
             >
                 <header id = ""
-                    className="ba pa1-00 gold container container80 sticky top-4 z-5 bg-white"
+                    className="ba pa1-00 gold sticky top-4 z-5 bg-white"
                 >
-                    <nav aria-label="Services navigation">
+                    <nav aria-label="Services navigation"
+                        className="container container80">
                         <ul className="list pa0 ma0">
                             <li>
                                 <details>
@@ -57,7 +58,7 @@ const Services = () => {
                     className="0"
                 >
                     <article id=""
-                        className="container container80    "
+                        className="    "
                     >
                         <section id=""
                             className="vh-100
@@ -89,7 +90,7 @@ const Services = () => {
                         </section>
                         <section id="" 
                             className="vh-75
-                                mv4-00 ba"
+                                mv4-00 ba container container80"
                         >
                             <h1 className="mb1-00 tc f4-00">
                                Our Offerings
@@ -295,7 +296,7 @@ const Services = () => {
                         </section>
                         <section id="" 
                             className=" bg-white-80
-                                mv1-00"
+                                mv1-00 container container80"
                         >
                             <h1 className="mb1-00 f4-00">
                                  Insights
@@ -370,7 +371,7 @@ const Services = () => {
                             </article> 
                         </section>
                         <section id="" 
-                            className="
+                            className="container container80
                                 mv1-00"
                         >
                             <h1 className="mb1-00 f4-00">
@@ -419,7 +420,7 @@ const Services = () => {
                             </footer>
                         </section>
                         <section id="" 
-                            className="vh-75
+                            className="vh-75 container container80
                                 mv1-00"
                         >
                             
@@ -474,9 +475,12 @@ const Services = () => {
                     </article>
                 </main>
                 
-                <footer className="ba pa1-00 tc gold"
-                >
-                    Services Footer
+                <footer className="ba pa1-00 tr gold ">
+                
+                    <div className="container container80"
+                    >
+                        Services Footer
+                    </div>
                 </footer>
             </div>
         </article>

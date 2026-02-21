@@ -12,9 +12,11 @@ const Info = () => {
             <div className="flex flex-column justify-between min-vh-90"
             >
                 <header id = ""
-                    className="ba pa1-00 gold container container80 sticky top-4 z-5 bg-white"
+                    className="ba pa1-00 gold sticky top-4 z-5 bg-white"
                 >
-                    <nav aria-label="Info navigation">
+                    <nav aria-label="Info navigation"
+                        className="container container80"
+                    >
                         <ul className="list pa0 ma0">
                             <li>
                                 <details>
@@ -55,10 +57,10 @@ const Info = () => {
                 </header>
             
                 <main id = "" 
-                    className="0"
+                    className=""
                 >
                     <article id=""
-                        className="container container80    "
+                        className=""
                     >
                         <section id=""
                             className="vh-100
@@ -98,7 +100,7 @@ const Info = () => {
                            
                         </section>
                         <section id="" 
-                            className=" bg-white-80
+                            className="container container80 bg-white-80
                                 mv1-00"
                         >
                             <h1 className="mb1-00 f4-00">
@@ -170,7 +172,7 @@ const Info = () => {
                             </article> 
                         </section>
                         <section id="" 
-                            className="
+                            className="container container80
                                 mv1-00"
                         >
                             <h1 className="mb1-00 f4-00">
@@ -245,7 +247,7 @@ const Info = () => {
                             </footer>
                         </section>
                         <section id="" 
-                            className="vh-75
+                            className="vh-75 container container80
                                 mv1-00"
                         >
                             

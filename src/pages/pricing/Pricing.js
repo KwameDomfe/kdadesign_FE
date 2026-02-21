@@ -12,9 +12,11 @@ const Pricing = () => {
             <div className="flex flex-column justify-between min-vh-90"
             >
                 <header id = ""
-                    className="ba pa1-00 gold container container80 sticky top-4 z-5 bg-white"
+                    className="ba pa1-00 gold sticky top-4 z-5 bg-white"
                 >
-                    <nav aria-label="Pricing navigation">
+                    <nav aria-label="Pricing navigation"
+                        className="container container80"
+                    >
                         <ul className="list pa0 ma0">
                             <li>
                                 <details>
@@ -58,11 +60,10 @@ const Pricing = () => {
                     className="0"
                 >
                     <article id=""
-                        className="container container80    "
+                        className=""
                     >
                         <section id=""
-                            className="vh-100
-                                mv1-00"
+                            className="vh-100"
                         >
                             <img src={second}
                                 alt="Pricing Banner"
@@ -89,7 +90,7 @@ const Pricing = () => {
                             </div>
                         </section>
                         <section id="" 
-                            className="
+                            className="container container80
                                 mv4-00 ba"
                         >
                             <h1 className="mb1-00 tc f4-00">
@@ -101,7 +102,7 @@ const Pricing = () => {
                             
                         </section>
                         <section id="" 
-                            className="
+                            className="container container80
                                 mv1-00"
                         >
                             <h1 className="mb1-00 f4-00">

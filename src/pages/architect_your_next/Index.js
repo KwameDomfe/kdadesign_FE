@@ -12,7 +12,8 @@ const ArchitectYourNext = () => {
                 <header id = ""
                     className="ba pa1-00 gold container container80 sticky top-4 z-5 bg-white"
                 >
-                    <nav aria-label="Architect Your Next navigation">
+                    <nav aria-label="Architect Your Next navigation"
+                    >
                         <ul className="list pa0 ma0">
                             <li>
                                 <details>
@@ -56,7 +57,7 @@ const ArchitectYourNext = () => {
                     className="0"
                 >
                     <article id=""
-                        className="container container80    "
+                        className="   "
                     >
                         <section id=""
                             className="vh-100
@@ -72,7 +73,7 @@ const ArchitectYourNext = () => {
                                 mv1-00 container container80"
                         >
                             <h2 className="f3-00">Overview</h2>  
-                            <div className="flex ggap2-00 mb1-00">
+                            <div className="flex ggap2-00">
                                 <div >
                                     <p className="f1-50 lh-copy">In an era defined by rapid technological advancements and shifting market dynamics, the ability to architect your next move is crucial for sustained success. This section provides an overview of the key strategies and insights that can help businesses navigate the complexities of the digital landscape and position themselves for future growth.</p>
                                 </div>
@@ -97,16 +98,21 @@ const ArchitectYourNext = () => {
                         </section>
                         <section id="" 
                             className=" bg-white-80
-                                mv1-00"
+                                mv1-00 container container80"
                         >
-                              <article id="architect_your_next__contents"
+                            <header className="mb1-00 f4-00">
+                                KDA Design Technologies AYN
+                            </header>
+                            <article id="architect_your_next__contents"
                                 className="grid gtc12 ggap1-00 ba pa1-00 "
                             >   
                                 <section id=""
-                                    className="gc1s4 vh-30
+                                    className="gc1s4 
                                         ba pa1-00  h-100 w-100"
                                 >
-                                    <img src={second} alt="Report 1"
+                                    <img src={second} 
+                                        alt="Report 1"
+                                        className="cover"
                                     />
                                     <p>Digital Core Capabilities </p>
                                     {/* <p> 
@@ -117,10 +123,12 @@ const ArchitectYourNext = () => {
                                     </Link>
                                 </section>
                                 <section id=""
-                                    className="gc1s4 gr2s1 vh-30
-                                        ba pa1-00  h-100 w-100"
+                                    className="gc1s4 gr2s1 
+                                        ba pa1-00"
                                 >
-                                    <img src={second} alt="Report 2"
+                                    <img src={second}
+                                        alt="Report 2"
+                                        className="cover"
                                     />
                                     <p>Digital Operating Model</p>
                                     <Link to="/architect-your-next/digital-operating-model/">
@@ -128,8 +136,8 @@ const ArchitectYourNext = () => {
                                     </Link>
                                 </section>
                                 <section id=""
-                                    className="gc5s4 gr1s2
-                                        ba pa1-00  h-100 w-100"
+                                    className="gc5s4 gr1s2 
+                                        ba pa1-00"
                                 >
                                     <img src={second} 
                                         alt="Report 3"
@@ -141,10 +149,12 @@ const ArchitectYourNext = () => {
                                     </Link>
                                 </section>
                                 <section id=""
-                                    className="gc9s4 gr1s1vh-30
-                                        ba pa1-00  h-100 w-100"
+                                    className="gc9s4 gr1s1 
+                                        ba pa1-00"
                                 >
-                                    <img src={second} alt="Report 4"
+                                    <img src={second} 
+                                        alt="Report 4"
+                                        className="cover"
                                     />
                                     <p>Empowering Talent Transformation</p>
                                     <Link to="/architect-your-next/empowering-talent-transformation/">
@@ -152,10 +162,12 @@ const ArchitectYourNext = () => {
                                     </Link>
                                 </section>
                                 <section id=""
-                                    className="gc9s4 gr2s1vh-30
-                                        ba pa1-00  h-100 w-100"
+                                    className="gc9s4 gr2s1
+                                        ba pa1-00"
                                 >
-                                    <img src={second} alt="Report 5"
+                                    <img src={second} 
+                                        alt="Report 5"
+                                        className="cover"
                                     />
                                     <p>Architecting New Possibilities</p>
                                     <Link to="/architect-your-next/architecting-new-possibilities/">
@@ -165,7 +177,7 @@ const ArchitectYourNext = () => {
                             </article> 
                         </section>
                         <section id="" 
-                            className="
+                            className="container container80
                                 mv1-00"
                         >
                             <h1 className="mb1-00 f4-00">
@@ -240,7 +252,7 @@ const ArchitectYourNext = () => {
                             </footer>
                         </section>
                         <section id="" 
-                            className="vh-75
+                            className="vh-75 container container80
                                 mv1-00"
                         >
                             

@@ -22,9 +22,11 @@ const Platforms = () => {
             <div className="flex flex-column justify-between min-vh-90"
             >
                 <header id = ""
-                    className="ba pa1-00 gold container container80 sticky top-4 z-5 bg-white"
+                    className="ba pa1-00 gold sticky top-4 z-5 bg-white"
                 >
-                    <nav aria-label="Platforms navigation">
+                    <nav aria-label="Platforms navigation"
+                        className="container container80"
+                    >
                         <ul className="list pa0 ma0">
                             <li>
                                 <details>
@@ -65,10 +67,10 @@ const Platforms = () => {
                 </header>
             
                 <main id = "" 
-                    className="0"
+                    className=""
                 >
                     <article id=""
-                        className="container container80    "
+                        className="    "
                     >
                         <section id=""
                             className="vh-100
@@ -100,15 +102,15 @@ const Platforms = () => {
                         </section>
                         
                         <section id="" 
-                            className="vh-75 flex
+                            className="vh-50 flex container container80
                                 mv1-00"
                         >
                             
                             <article id=""
-                                className=" flex flex-column ggap1-00"
+                                className=" flex flex-column ggap1-00 w-25"
                             >   
                                     <section id=""
-                                        className="vh-50
+                                        className="flex items-center justify-center
                                             ba pa1-00 h-100 w-100"
                                     >
                                         <p
@@ -119,7 +121,7 @@ const Platforms = () => {
                                         </p>
                                     </section>
                                     <section id=""
-                                        className="vh-50
+                                        className="flex items-center justify-center
                                             ba pa1-00 h-100 w-100"
                                     >
                                         <p
@@ -130,7 +132,7 @@ const Platforms = () => {
                                         </p>
                                     </section>
                                     <section id=""
-                                        className="vh-50
+                                        className="flex items-center justify-center
                                             ba pa1-00 h-100 w-100"
                                     >
                                         <p
@@ -141,12 +143,12 @@ const Platforms = () => {
                                         </p>
                                     </section>  
                             </article>
-                            <div className="flex justify-center items-center ba pa1-00 w-100"
+                            <div className="flex justify-center items-center ba pa1-00 w-75"
                             >
                                 {SelectedPlatformComponent ? (
                                     <SelectedPlatformComponent />
                                 ) : (
-                                    <p className="f1-25">Click on Platform Logo Placeholder to open component.</p>
+                                    <p className="f1-25">Click on a Platform Logo Placeholder to open component.</p>
                                 )}
                             </div>
                         </section>

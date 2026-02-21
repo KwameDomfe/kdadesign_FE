@@ -48,8 +48,10 @@ const Industries = () => {
     return (
         <article>
             <div className="flex flex-column justify-between min-vh-90">
-                <header className="ba pa1-00 gold container container80 sticky top-4 z-5 bg-white">
-                    <nav aria-label="Industries navigation">
+                <header className="ba pa1-00 gold  sticky top-4 z-5 bg-white">
+                    <nav aria-label="Industries navigation"
+                        className="flex items-center justify-between container container80"
+                    >
                         <ul className="list pa0 ma0">
                             <li>
                                 <details>
@@ -74,14 +76,14 @@ const Industries = () => {
                 </header>
 
                 <main>
-                    <article className="container container80">
+                    <article className="">
                         <section className="vh-100 mv1-00">
                             <img src={second}
                                 alt="Industries Banner"
                                 className="w-100 h-100 cover"
                             />
                         </section>
-                        <section id="overview" className="mv1-00 container container80-m">
+                        <section id="overview" className="mv1-00 container container80">
                             <h2 className="f3-00">Overview</h2>  
                             <div className="flex flex-column flex-row-m ggap2-00 mb1-00">
                                 <div>
@@ -97,7 +99,7 @@ const Industries = () => {
                                 </div>
                             </div>
                         </section>
-                        <section id="offerings" className="vh-75 mv4-00 ba">
+                        <section id="offerings" className="vh-75 mv4-00 ba container container80">
                             <h1 className="mb1-00 tc f4-00">
                                Our Offerings
                             </h1>
@@ -126,7 +128,7 @@ const Industries = () => {
                                 </div>
                             </div>
                         </section>
-                        <section id="insights" className="bg-white-80 mv1-00">
+                        <section id="insights" className="bg-white-80 mv1-00 container container80">
                             <h1 className="mb1-00 f4-00">
                                 Insights
                             </h1>
@@ -156,7 +158,7 @@ const Industries = () => {
                                 ))}
                             </article> 
                         </section>
-                        <section id="whats-new" className="mv1-00">
+                        <section id="whats-new" className="mv1-00 container container80">
                             <h1 className="mb1-00 f4-00">
                                 What's New in Industries
                             </h1>
@@ -180,7 +182,7 @@ const Industries = () => {
                                 KDA Design Technologies Research & Development
                             </footer>
                         </section>
-                        <section id="success-stories" className="mv1-00">
+                        <section id="success-stories" className="mv1-00 container container80">
                             <h1 className="mb1-00 f4-00">
                                 Success Stories
                             </h1>
