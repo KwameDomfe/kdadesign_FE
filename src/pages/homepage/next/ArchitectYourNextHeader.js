@@ -15,11 +15,7 @@ const ArchitectYourNextHeader = () => {
                 We bring you powerful advantages to architect your next digital transformation.
             </p>
             <p className="tc f1-50">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi laboriosam rerum nulla inventore nostrum ullam impedit nam at reiciendis. Fdolores earum, magni maiores animi incidunt? Placeat deserunt perspiciatis sint obcaecati a..
-            </p>
-            <p className="tc f1-50"
-            >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi laboriosam rerum nulla inventore nostrum ullam impedit nam at reiciendis. 
+                The mission of KDA Design Technologies is simple: to partner with individuals, businesses, and organizations ready to embrace digital transformation.
             </p>
         </header>
     )

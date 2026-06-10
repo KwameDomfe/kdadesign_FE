@@ -64,7 +64,7 @@ const HomePageAYN = () => {
                 >
                     <div
                     className="flex flex-column justify-between w16-00 h10-00-s
-                                    ba br0-50 white-90 pa0-50"
+                                    ba b--white-30 bg-white-20 br0-50 white-90 pa0-50"
                     >
                         <hgroup>
                             <h3 className="mb0-50 ">
@@ -87,7 +87,7 @@ const HomePageAYN = () => {
                     </div>
                     <div
                     className="flex flex-column justify-between w16-00 h10-00-s
-                                    ba br0-50 white-90 pa0-50"
+                        ba b--white-30 bg-white-20 br0-50 white-90 pa0-50"
                     >
                     <hgroup>
                         <h3 className="mb0-50">

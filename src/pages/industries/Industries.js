@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import second from '../../images/placeholders/landscape_Images/landscape_01.png'
 import { industriesPageData } from '../../data/industriesPageData'
@@ -34,7 +34,7 @@ const Industries = () => {
             return () => {
                 isMounted = false
             }
-            
+
         }, []
     )
 
@@ -96,10 +96,10 @@ const Industries = () => {
                         <section id="overview" className="mv1-00 container container80">
                             <h2 className="f3-00">Overview</h2>  
                             <div className="flex flex-column flex-row-m ggap2-00 mb1-00">
-                                <div>
+                                <div className="w-50">
                                     <p className="f1-50 lh-copy">In an era defined by rapid technological advancements and shifting market dynamics, the ability to move quickly is crucial for sustained success. This section provides an overview of key strategies and insights to help businesses navigate digital complexity and position themselves for future growth.</p>
                                 </div>
-                                <div className="f1-25">
+                                <div className="f1-25 w-50">
                                     <p>
                                         From embracing emerging technologies to fostering a culture of innovation, we explore the essential elements that contribute to successful transformation. Discover how to identify new opportunities, mitigate risks, and create a roadmap for your organization's future in this ever-evolving business environment.
                                     </p>
@@ -111,7 +111,7 @@ const Industries = () => {
                         </section>
                         <section id="offerings" className="vh-75 mv4-00 ba container container80">
                             <h1 className="mb1-00 tc f4-00">
-                               Our Offerings
+                               Our Industries
                             </h1>
                             <p className="mb1-00 tc f2-00">
                                 Our solutions across industries foster innovation helping enterprises adapt to new realities of business and technology.
@@ -127,11 +127,13 @@ const Industries = () => {
                                     <ul className="pl3-00">
                                         {industryOfferings.map((industry) => (
                                             <li className="mb1-00" key={industry.name}>
-                                                {industry.to ? (
-                                                    <Link to={industry.to}>{industry.name}</Link>
-                                                ) : (
-                                                    <span>{industry.name} (coming soon)</span>
-                                                )}
+                                                {   
+                                                    industry.to ? (
+                                                        <Link to={industry.to}>{industry.name}</Link>
+                                                    ) : (
+                                                        <span>{industry.name} (coming soon)</span>
+                                                    )
+                                                }
                                             </li>
                                         ))}
                                     </ul>

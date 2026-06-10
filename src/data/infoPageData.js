@@ -1,11 +1,38 @@
 export const infoPageData = {
     navLinks: [
-        { to: 'the-company', label: 'The company' },
-        { to: 'the-team', label: 'The Team' },
-        { to: 'the-approach', label: 'The Approach' },
-        { to: 'the-culture', label: 'The Culture' },
-        { to: 'the-stories', label: 'The Stories' },
+        { 
+            to: 'the-company',
+            label: 'The company',
+            subMenus: 
+                [
+                { to: 'core-purpose', label: 'Core  Purpose'} ,
+                {to: 'core-values', label: 'Core Values'} ,
+                { to: 'principles', label: 'Principles'} ,
+                { to: 'mission', label: 'Mission'} ,
+                { to: 'the-vision', label: 'The Vision'} ,
+                { to: 'the-story', label: 'The Story'} ,
+                { to: 'our-business-model', label: 'Our Business Model'} ,
+            ],
+        },
+
+        { 
+            to: 'the-team',
+            label: 'The Team',
+            subMenus: 
+                [
+                    { to: 'core-purpose', label: 'Core  Purpose'} ,
+                    { to: 'principles', label: 'Principles'} ,
+            ],
+        },
+
+        
+
+        { to: 'the-approach', label: 'The Approach'} ,
+        { to: 'the-culture', label: 'The Culture'} ,
+        { to: 'the-stories', label: 'The Stories'} ,
     ],
+
+    
     overview: {
         title: 'Overview',
         paragraphOne: 'In an era defined by rapid technological advancements and shifting market dynamics, the ability to architect your next move is crucial for sustained success. This section provides an overview of the key strategies and insights that can help businesses navigate the complexities of the digital landscape and position themselves for future growth.',

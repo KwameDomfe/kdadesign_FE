@@ -16,12 +16,12 @@ const OurPurpose = () => {
                     <h1 className="f3-00 f4-00-m  fw6 ttc mt0-00 mb2-00">
                         Our Purpose
                     </h1>
-                    <p className="f1-75 mb0-00">
-                        Democratization of digital design
+                    <p className="f1-75 mb2-00">
+                        To design develop and deliver custom digital solutions for forward looking individuals, businesses and organizations.
                     </p>
-                    <p className="f1-75 mb0-00">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur facere  Magni a, doloremque labore nam porro ipsam alias odio aliquam.
-                    </p>
+                    {/* <p className="f1-75 mb0-00">
+                        We are committed to providing our clients with the highest quality services and products that meet their unique needs and exceed their expectations
+                    </p> */}
                 </figcaption>
             </div>
         </section>

@@ -33,9 +33,20 @@ const Info = () => {
                                         <ul className="list pa1-00 ma0">
                                             {navLinks.map((item) => (
                                                 <li key={item.to}>
-                                                    <Link to={item.to} className="gold">
+                                                    
                                                         {item.label}
-                                                    </Link>
+                                                        {item.subMenus && (
+                                                            <ul className="list pa0 ml2-00">
+                                                                {item.subMenus.map((subMenu) => (
+                                                                    <li key={subMenu.to}>
+                                                                        <Link to={subMenu.to} className="gold">
+                                                                            {subMenu.label}
+                                                                        </Link>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        )}
+
                                                 </li>
                                             ))}
                                         </ul>
